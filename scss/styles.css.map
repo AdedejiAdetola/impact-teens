@@ -1,0 +1,17 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "styles.scss",
+        "animations/_animations.scss",
+        "base/_base.scss",
+        "components/_components.scss",
+        "layout/_layout.scss",
+        "mixins/_mixins.scss",
+        "pages/_pages.scss",
+        "themes/_themes.scss",
+        "variables/_variables.scss"
+    ],
+    "names": [],
+    "file": "styles.css"
+}
