@@ -2,4 +2,41 @@
   height: 90vh;
   width: 100vw;
   background-color: grey;
+  position: relative;
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-35%, -80%);
+    text-align: center;
+    color: $white;
+  }
+  &__p_italic {
+    font-family: $italic-text, $italic-default;
+    font-size: 3rem;
+  }
+  &__text-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  &__hr {
+    width: 10rem;
+  }
+  &--modified {
+    padding: 0 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+  }
+  &--modified_big {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 0.3rem;
+    padding-bottom: 1.5rem;
+  }
+  &--modified_small {
+    font-size: 1.2rem;
+  }
 }

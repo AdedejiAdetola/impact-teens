@@ -2,16 +2,17 @@
   display: flex;
   justify-content: center;
   font-family: $normal-text, $designed-default;
-  font-size: 1.5rem;
   &__div {
     padding: 4rem 1.5rem;
     a {
       text-decoration: none;
       color: $white;
-      transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out;
+      transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out,
+        color 0.2s ease-in-out;
       &:hover {
-        border-bottom: 0.3rem solid $blue;
+        border-bottom: 0.3rem solid $white;
         font-size: 1.7rem;
+        color: $blue;
       }
     }
   }

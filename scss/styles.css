@@ -12,12 +12,65 @@ html {
 
 body {
   font-family: "Libre Baskerville", serif;
+  color: #000;
+  font-size: 1.5rem;
 }
 
 .header {
   height: 90vh;
   width: 100vw;
   background-color: grey;
+  position: relative;
+}
+
+.header__text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-35%, -80%);
+          transform: translate(-35%, -80%);
+  text-align: center;
+  color: #fff;
+}
+
+.header__p_italic {
+  font-family: "MonteCarlo", cursive;
+  font-size: 3rem;
+}
+
+.header__text-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+}
+
+.header__hr {
+  width: 10rem;
+}
+
+.header--modified {
+  padding: 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1rem;
+}
+
+.header--modified_big {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 1.5rem;
+}
+
+.header--modified_small {
+  font-size: 1.2rem;
 }
 
 .nav {
@@ -28,7 +81,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   font-family: "Noto Sans JP", serif;
-  font-size: 1.5rem;
 }
 
 .nav__div {
@@ -38,13 +90,14 @@ body {
 .nav__div a {
   text-decoration: none;
   color: #fff;
-  -webkit-transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out;
-  transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out;
+  -webkit-transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out, color 0.2s ease-in-out;
+  transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out, color 0.2s ease-in-out;
 }
 
 .nav__div a:hover {
-  border-bottom: 0.3rem solid #04009a;
+  border-bottom: 0.3rem solid #fff;
   font-size: 1.7rem;
+  color: #04009a;
 }
 
 .nav--span_color {
