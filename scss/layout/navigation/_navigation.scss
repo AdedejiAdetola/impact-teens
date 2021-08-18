@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  font-family: $normal-text, $designed-default;
+  font-size: 1.5rem;
+  &__div {
+    padding: 4rem 1.5rem;
+    a {
+      text-decoration: none;
+      color: $white;
+      transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out;
+      &:hover {
+        border-bottom: 0.3rem solid $blue;
+        font-size: 1.7rem;
+      }
+    }
+  }
+  &--span_color {
+    color: $blue;
+  }
+  &--p_color {
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  &--position {
+    display: block;
+    text-align: center;
+  }
+  &--icon {
+    font-size: 4rem;
+  }
+  &__iconn {
+    padding: 1.5rem 1.5rem;
+  }
+}

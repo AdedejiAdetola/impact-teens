@@ -1,9 +1,12 @@
 //importing sub-files to the main file
-@import "animations/animations";
-@import "base/base";
-@import "components/components";
-@import "layout/layout";
+@import "variables/variables";
+@import "fonts/fonts";
 @import "mixins/mixins";
+
+@import "base/base";
+@import "layout/layout";
+@import "components/components";
+@import "animations/animations";
+
 @import "pages/pages";
 @import "themes/themes";
-@import "variables/variables";

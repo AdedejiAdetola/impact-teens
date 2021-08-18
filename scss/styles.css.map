@@ -1,16 +1,19 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AEAA,OAAO,CAAC,kJAAI;AEAZ,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,KAAK;CACjB;;AAED,AAAA,IAAI,CAAC;EACH,WAAW,EHTG,mBAAmB,EAChB,KAAK;CGSvB;;AEZD,AAAA,OAAO,CAAC;EACN,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,gBAAgB,EAAE,IAAI;CACvB;;ACJD,AAAA,IAAI,CAAC;EACH,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,ENEC,cAAc,EAFT,KAAK;EMCtB,SAAS,EAAE,MAAM;CA+BlB;;AA9BE,AAAD,SAAM,CAAC;EACL,OAAO,EAAE,WAAW;CAUrB;;AAXA,AAEC,SAFI,CAEJ,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;EACrB,KAAK,ENGH,IAAI;EMFN,UAAU,EAAE,mDAAmD;CAKhE;;AAVF,AAMG,SANE,CAEJ,CAAC,AAIE,MAAM,CAAC;EACN,aAAa,EAAE,MAAM,CAAC,KAAK,CNC5B,OAAO;EMAN,SAAS,EAAE,MAAM;CAClB;;AAGJ,AAAD,gBAAa,CAAC;EACZ,KAAK,ENLF,OAAO;CMMX;;AACA,AAAD,aAAU,CAAC;EACT,KAAK,ENTD,IAAI;EMUR,cAAc,EAAE,SAAS;EACzB,WAAW,EAAE,GAAG;CACjB;;AACA,AAAD,cAAW,CAAC;EACV,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,MAAM;CACnB;;AACA,AAAD,UAAO,CAAC;EACN,SAAS,EAAE,IAAI;CAChB;;AACA,AAAD,WAAQ,CAAC;EACP,OAAO,EAAE,aAAa;CACvB",
     "sources": [
         "styles.scss",
-        "animations/_animations.scss",
-        "base/_base.scss",
-        "components/_components.scss",
-        "layout/_layout.scss",
+        "variables/_variables.scss",
+        "fonts/_fonts.scss",
         "mixins/_mixins.scss",
+        "base/_base.scss",
+        "layout/_layout.scss",
+        "layout/header/_header.scss",
+        "layout/navigation/_navigation.scss",
+        "components/_components.scss",
+        "animations/_animations.scss",
         "pages/_pages.scss",
-        "themes/_themes.scss",
-        "variables/_variables.scss"
+        "themes/_themes.scss"
     ],
     "names": [],
     "file": "styles.css"
