@@ -52,7 +52,7 @@ body {
 }
 
 .header__hr {
-  width: 10rem;
+  width: 12rem;
 }
 
 .header--modified {
@@ -64,7 +64,7 @@ body {
 
 .header--modified_big {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   letter-spacing: 0.3rem;
   padding-bottom: 1.5rem;
 }
@@ -80,23 +80,24 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Noto Sans JP", serif;
 }
 
 .nav__div {
-  padding: 4rem 1.5rem;
+  padding: 4rem 2rem;
 }
 
 .nav__div a {
   text-decoration: none;
   color: #fff;
+  font-size: 1.3rem;
+  font-family: "Noto Sans JP", serif;
   -webkit-transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out, color 0.2s ease-in-out;
   transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out, color 0.2s ease-in-out;
 }
 
 .nav__div a:hover {
   border-bottom: 0.3rem solid #fff;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #04009a;
 }
 
@@ -107,7 +108,8 @@ body {
 .nav--p_color {
   color: #fff;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 900;
+  padding: 0 5rem;
 }
 
 .nav--position {
@@ -120,7 +122,7 @@ body {
 }
 
 .nav__iconn {
-  padding: 1.5rem 1.5rem;
+  padding: 2rem 2rem;
 }
 
 .btn {
