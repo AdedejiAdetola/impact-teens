@@ -19,7 +19,11 @@ body {
 .header {
   height: 90vh;
   width: 100vw;
-  background-color: grey;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url(/images/Homepage.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7)), url(/images/Homepage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 
@@ -27,10 +31,12 @@ body {
   position: absolute;
   top: 50%;
   left: 40%;
-  -webkit-transform: translate(-35%, -80%);
-          transform: translate(-35%, -80%);
+  -webkit-transform: translate(-40%, -80%);
+          transform: translate(-40%, -80%);
   text-align: center;
   color: #fff;
+  width: 80%;
+  border: 2px solid blue;
 }
 
 .header__p_italic {
@@ -64,7 +70,7 @@ body {
 
 .header--modified_big {
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3rem;
   letter-spacing: 0.3rem;
   padding-bottom: 1.5rem;
 }
@@ -122,7 +128,12 @@ body {
 }
 
 .nav__iconn {
-  padding: 2rem 2rem;
+  padding: 3rem 2rem;
+}
+
+.nav__iconn img {
+  width: 10rem;
+  height: 10rem;
 }
 
 .btn {

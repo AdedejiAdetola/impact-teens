@@ -1,15 +1,20 @@
 .header {
   height: 90vh;
   width: 100vw;
-  background-color: grey;
+  background: linear-gradient(rgba(0, 0, 0, 0.7)), url(/images/Homepage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   &__text {
     position: absolute;
     top: 50%;
     left: 40%;
-    transform: translate(-35%, -80%);
+    transform: translate(-40%, -80%);
     text-align: center;
     color: $white;
+    width: 80%;
+    border: 2px solid blue;
   }
   &__p_italic {
     font-family: $italic-text, $italic-default;
@@ -32,7 +37,7 @@
   }
   &--modified_big {
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 0.3rem;
     padding-bottom: 1.5rem;
   }

@@ -34,6 +34,11 @@
     font-size: 4rem;
   }
   &__iconn {
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
+    //CONTINUE FROM HERE
+    img {
+      width: 10rem;
+      height: 10rem;
+    }
   }
 }
