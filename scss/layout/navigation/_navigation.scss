@@ -11,20 +11,25 @@
       transition: border-bottom 0.2s ease-in, font-size 0.2s ease-out,
         color 0.2s ease-in-out;
       &:hover {
-        border-bottom: 0.3rem solid $white;
-        font-size: 1.5rem;
+        border-bottom: 0.2rem solid $white;
+        font-size: 1.4rem;
         color: $blue;
       }
     }
   }
   &--span_color {
     color: $blue;
+    font-weight: 900;
   }
   &--p_color {
     color: $white;
     text-transform: uppercase;
     font-weight: 900;
     padding: 0 5rem;
+    text-shadow: 0 0 0.5rem #fff;
+    span {
+      text-shadow: 0 0 0.5rem #fff;
+    }
   }
   &--position {
     display: block;
