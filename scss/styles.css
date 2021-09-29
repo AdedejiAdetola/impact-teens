@@ -12,7 +12,7 @@ html {
 
 body {
   font-family: "Libre Baskerville", serif;
-  color: #000;
+  color: #232323;
   font-size: 1.5rem;
 }
 
@@ -103,11 +103,11 @@ body {
 .nav__div a:hover {
   border-bottom: 0.2rem solid #fff;
   font-size: 1.4rem;
-  color: #443ef5ad;
+  color: #22577a;
 }
 
 .nav--span_color {
-  color: #443ef5ad;
+  color: #22577a;
   font-weight: 900;
 }
 
@@ -133,12 +133,28 @@ body {
 }
 
 .nav__iconn {
-  padding: 3rem 2rem;
+  padding: 0rem 2rem;
 }
 
 .nav__iconn img {
   width: 10rem;
   height: 10rem;
+}
+
+.section {
+  width: 100vw;
+  height: 30vh;
+  background-color: #232323;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section__event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .btn {
@@ -165,7 +181,7 @@ body {
   width: 12rem;
   height: 4rem;
   color: #fff;
-  background-color: #443ef5ad;
+  background-color: #22577a;
   border: none;
   outline: none;
   font-size: 1rem;
@@ -182,6 +198,6 @@ body {
 .btn__button:hover {
   -webkit-box-shadow: inset 20rem 0 0 0 #fff;
           box-shadow: inset 20rem 0 0 0 #fff;
-  color: #0a0af0;
+  color: #22577a;
 }
 /*# sourceMappingURL=styles.css.map */

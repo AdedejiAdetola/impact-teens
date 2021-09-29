@@ -1,0 +1,10 @@
+.section {
+  width: 100vw;
+  height: 30vh;
+  background-color: $black;
+  color: $white;
+  display: flex;
+  &__event {
+    display: flex;
+  }
+}
