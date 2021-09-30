@@ -143,18 +143,71 @@ body {
 
 .section {
   width: 100vw;
-  height: 30vh;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
   background-color: #232323;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 2px solid red;
 }
 
 .section__event {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 2px solid blue;
+  width: 40%;
+}
+
+.section__event__logo {
+  border: 2px solid red;
+  margin-right: 3rem;
+}
+
+.section__event__logo img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.section__event__logo p {
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", serif;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.section__event--modified1 {
+  font-size: 1.5rem;
+}
+
+.section__event--modified2 {
+  font-size: 0.7rem;
+}
+
+.section__event__details {
+  border: 2px solid red;
+}
+
+.section__event__details--modified {
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", serif;
+  font-weight: 400;
+  background-color: #22577a;
+  letter-spacing: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section__countdown {
+  border: 2px solid blue;
+  width: 30%;
 }
 
 .btn {

@@ -1,10 +1,54 @@
 .section {
   width: 100vw;
-  height: 30vh;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
   background-color: $black;
   color: $white;
   display: flex;
+  justify-content: space-evenly;
+  border: 2px solid red;
   &__event {
     display: flex;
+    border: 2px solid blue;
+    width: 40%;
+    &__logo {
+      border: 2px solid red;
+      margin-right: 3rem;
+      img {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+      }
+      p {
+        text-transform: uppercase;
+        font-family: $normal-text, $designed-default;
+        font-weight: lighter;
+        text-align: center;
+      }
+    }
+    &--modified1 {
+      font-size: 1.5rem;
+    }
+    &--modified2 {
+      font-size: 0.7rem;
+    }
+
+    &__details {
+      border: 2px solid red;
+      &--modified {
+        text-transform: uppercase;
+        font-family: $normal-text, $designed-default;
+        font-weight: 400;
+        background-color: $blue;
+        letter-spacing: 0.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &__countdown {
+    border: 2px solid blue;
+    width: 30%;
   }
 }
