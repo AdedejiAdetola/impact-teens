@@ -170,8 +170,8 @@ body {
 }
 
 .section__event__logo img {
-  width: 5rem;
-  height: 5rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
 }
 
@@ -201,13 +201,33 @@ body {
   background-color: #22577a;
   letter-spacing: 0.5rem;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 2rem;
+  width: 47%;
+}
+
+.section__event__details--lilmodified {
+  margin-bottom: 1rem;
+}
+
+.section__event__details--finalmodified {
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", serif;
+  font-size: 1rem;
+}
+
+.section__event__details--finalmodified .fa-map-marker-alt {
+  margin-left: 0.2rem;
+}
+
+.section__event__details--finalmodified span {
+  margin-left: 0.2rem;
 }
 
 .section__countdown {
   border: 2px solid blue;
   width: 30%;
+  text-align: right;
 }
 
 .btn {

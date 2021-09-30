@@ -15,8 +15,8 @@
       border: 2px solid red;
       margin-right: 3rem;
       img {
-        width: 5rem;
-        height: 5rem;
+        width: 7rem;
+        height: 7rem;
         border-radius: 50%;
       }
       p {
@@ -42,13 +42,31 @@
         background-color: $blue;
         letter-spacing: 0.5rem;
         padding: 1rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
         margin-bottom: 2rem;
+        width: 47%;
+      }
+
+      &--lilmodified {
+        margin-bottom: 1rem;
+      }
+
+      &--finalmodified {
+        text-transform: uppercase;
+        font-family: $normal-text, $designed-default;
+        font-size: 1rem;
+        .fa-map-marker-alt {
+          margin-left: 0.2rem;
+        }
+        span {
+          margin-left: 0.2rem;
+        }
       }
     }
   }
   &__countdown {
     border: 2px solid blue;
     width: 30%;
+    text-align: right;
   }
 }
