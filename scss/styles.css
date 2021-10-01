@@ -195,15 +195,15 @@ body {
 }
 
 .section__event__details--modified {
+  background-color: #22577a;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 47%;
   text-transform: uppercase;
   font-family: "Noto Sans JP", serif;
   font-weight: 400;
-  background-color: #22577a;
   letter-spacing: 0.5rem;
-  padding: 1rem;
   font-size: 0.8rem;
-  margin-bottom: 2rem;
-  width: 47%;
 }
 
 .section__event__details--lilmodified {
@@ -214,6 +214,7 @@ body {
   text-transform: uppercase;
   font-family: "Noto Sans JP", serif;
   font-size: 1rem;
+  color: #9e9d89;
 }
 
 .section__event__details--finalmodified .fa-map-marker-alt {
@@ -228,6 +229,62 @@ body {
   border: 2px solid blue;
   width: 30%;
   text-align: right;
+}
+
+.section__countdown .socials {
+  border: 2px solid red;
+}
+
+.section__countdown .socials__share {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: #9e9d89;
+  font-family: "Noto Sans JP", serif;
+  margin-right: 3rem;
+}
+
+.section__countdown .socials__icon {
+  color: #9e9d89;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.section__countdown .socials__icon:hover {
+  font-size: 1.7rem;
+}
+
+.section__countdown .count {
+  border: 2px solid yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.section__countdown .count__clock {
+  text-align: center;
+  background-color: #fff;
+  color: #22577a;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", serif;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.section__countdown .count__notClock {
+  text-align: center;
+  background-color: #22577a;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", serif;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .btn {

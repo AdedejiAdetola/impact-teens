@@ -1,0 +1,17 @@
+@mixin spaced_text() {
+  text-transform: uppercase;
+  font-family: $normal-text, $designed-default;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  font-size: 0.8rem;
+}
+
+@mixin clock($bgcolor, $color) {
+  text-align: center;
+  background-color: $bgcolor;
+  color: $color;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  font-family: $normal-text, $designed-default;
+}

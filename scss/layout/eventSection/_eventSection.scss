@@ -3,6 +3,7 @@
   padding-top: 3rem;
   padding-bottom: 5rem;
   background-color: $black;
+
   color: $white;
   display: flex;
   justify-content: space-evenly;
@@ -26,25 +27,24 @@
         text-align: center;
       }
     }
+
     &--modified1 {
       font-size: 1.5rem;
     }
+
     &--modified2 {
       font-size: 0.7rem;
     }
 
     &__details {
       border: 2px solid red;
+
       &--modified {
-        text-transform: uppercase;
-        font-family: $normal-text, $designed-default;
-        font-weight: 400;
         background-color: $blue;
-        letter-spacing: 0.5rem;
         padding: 1rem;
-        font-size: 0.8rem;
         margin-bottom: 2rem;
         width: 47%;
+        @include spaced-text;
       }
 
       &--lilmodified {
@@ -55,6 +55,7 @@
         text-transform: uppercase;
         font-family: $normal-text, $designed-default;
         font-size: 1rem;
+        color: $darkGrey;
         .fa-map-marker-alt {
           margin-left: 0.2rem;
         }
@@ -64,9 +65,47 @@
       }
     }
   }
+
   &__countdown {
     border: 2px solid blue;
     width: 30%;
     text-align: right;
+
+    .socials {
+      border: 2px solid red;
+      &__share {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        color: $darkGrey;
+        font-family: $normal-text, $designed-default;
+        margin-right: 3rem;
+      }
+
+      &__icon {
+        color: $darkGrey;
+        background-color: transparent;
+        text-decoration: none;
+        &:hover {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    .count {
+      border: 2px solid yellow;
+      display: flex;
+      justify-content: right;
+      &__clock {
+        @include clock($white, $blue);
+        margin-right: 0.5rem;
+        font-size: 1rem;
+      }
+
+      &__notClock {
+        @include clock($blue, $white);
+        font-size: 1rem;
+        font-weight: 600;
+      }
+    }
   }
 }
