@@ -14,6 +14,7 @@ let totalSeconds;
 
 function init() {
   totalSeconds = Math.floor((new Date(2021, 10, 27, 10, 0, 0, 0) - new Date()) / 1000);
+  setTimeLeft();
   let interval = setInterval(() => {
     if (totalSeconds < 0) {
       clearInterval(interval)
