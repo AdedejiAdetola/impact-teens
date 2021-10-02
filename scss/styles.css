@@ -159,7 +159,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40%;
 }
 
 .section__event__logo {
@@ -219,7 +218,6 @@ body {
 }
 
 .section__countdown {
-  width: 30%;
   text-align: right;
 }
 
@@ -288,6 +286,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.culturePage {
+  border: 2px solid orangered;
 }
 
 .btn {

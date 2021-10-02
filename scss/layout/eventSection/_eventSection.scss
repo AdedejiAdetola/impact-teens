@@ -3,13 +3,11 @@
   padding-top: 3rem;
   padding-bottom: 5rem;
   background-color: $black;
-
   color: $white;
   display: flex;
   justify-content: space-evenly;
   &__event {
     display: flex;
-    width: 40%;
     &__logo {
       margin-right: 3rem;
       img {
@@ -62,9 +60,7 @@
   }
 
   &__countdown {
-    width: 30%;
     text-align: right;
-
     .socials {
       &__share {
         text-transform: uppercase;
