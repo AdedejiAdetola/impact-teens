@@ -1,3 +1,46 @@
 .culturePage {
   border: 2px solid orangered;
 }
+
+.cultureHeading {
+  img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+  }
+}
+
+.cultureSubheading {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid blue;
+
+  &__left {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 40%;
+    &__component {
+      display: flex;
+      border: 2px solid green;
+      width: 50%;
+    }
+  }
+
+  &__right {
+    border: 2px solid black;
+    width: 40%;
+    &__component {
+      display: flex;
+      border: 2px solid green;
+      width: 50%;
+    }
+  }
+}
+
+.aye {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
