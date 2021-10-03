@@ -1,31 +1,9 @@
 .btn {
+  //whiteblue
+  //boxshadow: white color blue
   position: absolute;
   top: 65%;
   left: 50%;
-  height: 10vh;
-  width: 10vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transform: translate(-70%, 150%);
-  &__button {
-    padding: 0.7rem 2rem;
-    width: 12rem;
-    height: 4rem;
-    color: $white;
-    background-color: $blue;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    font-family: $normal-text, $normal-default;
-    text-transform: uppercase;
-    box-shadow: inset 0 0 0 0 $white;
-    transition: ease-in-out 0.2s;
-    font-weight: 600;
-    cursor: pointer;
-    &:hover {
-      box-shadow: inset 20rem 0 0 0 $white;
-      color: $blue;
-    }
-  }
+  @include button($white, $blue, $white, $blue);
 }

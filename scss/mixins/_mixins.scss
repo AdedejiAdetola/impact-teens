@@ -1,7 +1,7 @@
 @mixin spaced_text() {
   text-transform: uppercase;
   font-family: $normal-text, $designed-default;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 0.5rem;
   font-size: 0.8rem;
 }
@@ -14,4 +14,55 @@
   border-radius: 0.2rem;
   text-transform: uppercase;
   font-family: $normal-text, $designed-default;
+}
+
+@mixin cultureParagraphs() {
+  padding: 2rem 0;
+  p:first-child {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: $white;
+  }
+
+  p:last-child {
+    font-size: 1rem;
+    color: $darkGrey;
+  }
+}
+
+@mixin eachComponent() {
+  display: flex;
+  width: 70%;
+  img {
+    width: 10rem;
+    //height: 15rem;
+  }
+}
+
+@mixin button($color, $bgcolor, $boxshadow, $hcolor) {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__button {
+    padding: 0.7rem 2rem;
+    width: 12rem;
+    height: 4rem;
+    color: $color;
+    background-color: $bgcolor;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-family: $normal-text, $normal-default;
+    text-transform: uppercase;
+    box-shadow: inset 0 0 0 0 $boxshadow;
+    transition: ease-in-out 0.2s;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      box-shadow: inset 20rem 0 0 0 $boxshadow;
+      color: $hcolor;
+    }
+  }
 }
