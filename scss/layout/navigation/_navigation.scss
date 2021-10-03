@@ -1,6 +1,7 @@
 .nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   &__div {
     padding: 4rem 2rem;
     a {
@@ -40,8 +41,6 @@
     font-size: 4rem;
   }
   &__iconn {
-    padding: 0rem 2rem;
-    //CONTINUE FROM HERE
     img {
       width: 10rem;
       height: 10rem;

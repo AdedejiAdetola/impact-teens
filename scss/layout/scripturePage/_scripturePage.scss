@@ -1,0 +1,35 @@
+.scripturePage {
+  background: url("/images/scripturePage.png");
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+  &__text {
+    width: 40%;
+    margin-left: 4rem;
+    p:first-child {
+      color: $white;
+      span {
+        color: $blue;
+        text-shadow: 0 0 0.5rem $blue;
+        font-size: 1.3rem;
+      }
+    }
+    p:last-child {
+      margin-top: 3rem;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-family: $normal-text, $normal-default;
+      font-weight: 600;
+      letter-spacing: 0.1rem;
+      span {
+        color: $darkBrown;
+      }
+    }
+  }
+}

@@ -1,5 +1,9 @@
 .culturePage {
-  background: linear-gradient(rgba(3, 81, 120, 1)), url();
+  background: linear-gradient(rgba(3, 81, 120, 0.85)),
+    url("/images/culturePage.png");
+  background-position: center;
+  background-size: cover;
+  line-height: 2rem;
 }
 
 .cultureHeading {
@@ -18,6 +22,7 @@
   &--spacedText {
     @include spaced_text;
     color: $darkGrey;
+    margin-bottom: 1rem;
   }
 
   &--Heading {
