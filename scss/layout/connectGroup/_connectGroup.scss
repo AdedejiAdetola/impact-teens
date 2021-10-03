@@ -43,7 +43,6 @@
 
   &Teams {
     height: 60vh;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +50,6 @@
     &All {
       width: 15%;
       height: 80%;
-      border: 2px solid blue;
       margin-right: 1rem;
       display: flex;
       flex-direction: column;
@@ -92,4 +90,11 @@
       background-position: 40% center;
     }
   }
+}
+
+.connectBtn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @include button($darkGrey, $white, $blue, $white);
 }
