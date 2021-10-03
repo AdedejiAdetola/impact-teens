@@ -1,0 +1,95 @@
+.connectGroup {
+  background-color: $black;
+  padding-top: 5rem;
+
+  &Inner {
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &--spacedText {
+      @include spaced_text;
+      color: $darkGrey;
+      margin-bottom: 1rem;
+    }
+
+    &--Heading {
+      font-size: 2rem;
+      color: $white;
+    }
+
+    hr {
+      width: 12%;
+      border-top: 1px solid $darkGrey;
+      margin: 2rem 0;
+    }
+
+    &--text {
+      width: 70%;
+      color: $darkGrey;
+      font-size: 1.2rem;
+    }
+    margin-bottom: 8rem;
+  }
+
+  &--btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include button($white, $blue, $white, $blue);
+  }
+
+  &Teams {
+    height: 60vh;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &All {
+      width: 15%;
+      height: 80%;
+      border: 2px solid blue;
+      margin-right: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-top: 3rem;
+      }
+    }
+
+    &--music {
+      background: url("/images/musicPic.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 80% center;
+    }
+    &--evangelism {
+      background: linear-gradient(rgba(0, 0, 0, 0.4)),
+        url("/images/evangelismPic.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    &--protocol {
+      background: url("/images/protocolPic.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
+    &--media {
+      background: linear-gradient(rgba(0, 0, 0, 0.6)),
+        url("/images/mediaPic.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 40% center;
+    }
+  }
+}
