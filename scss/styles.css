@@ -478,7 +478,7 @@ body {
 
 .scripturePage {
   background: url("/images/scripturePage.png");
-  height: 40rem;
+  height: 30rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

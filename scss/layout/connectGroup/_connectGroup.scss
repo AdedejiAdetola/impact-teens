@@ -9,28 +9,8 @@
     align-items: center;
     text-align: center;
 
-    &--spacedText {
-      @include spaced_text;
-      color: $darkGrey;
-      margin-bottom: 1rem;
-    }
-
-    &--Heading {
-      font-size: 2rem;
-      color: $white;
-    }
-
-    hr {
-      width: 12%;
-      border-top: 1px solid $darkGrey;
-      margin: 2rem 0;
-    }
-
-    &--text {
-      width: 70%;
-      color: $darkGrey;
-      font-size: 1.2rem;
-    }
+    @include headingSpacedText($darkGrey, $white, $darkGrey);
+    @include sectionSetupText($darkGrey);
     margin-bottom: 5rem;
   }
 

@@ -66,3 +66,34 @@
     }
   }
 }
+
+@mixin headingSpacedText($spacedTextCol, $headingCol, $hrCol) {
+  &--spacedText {
+    @include spaced_text;
+    color: $spacedTextCol;
+    margin-bottom: 1rem;
+  }
+
+  &--Heading {
+    font-size: 2rem;
+    color: $headingCol;
+  }
+
+  hr {
+    width: 12%;
+    border-top: 1px solid $hrCol;
+    margin: 2rem 0;
+  }
+}
+
+@mixin sectionSetupText($textColor) {
+  &--text {
+    width: 70%;
+    color: $textColor;
+    font-size: 1.2rem;
+  }
+}
+
+//spaced text -- $darkGrey
+//heading -- $white
+//hr -- $black
