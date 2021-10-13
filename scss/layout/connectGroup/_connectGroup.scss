@@ -77,4 +77,5 @@
   justify-content: center;
   width: 100%;
   @include button($darkGrey, $white, $blue, $white);
+  padding-bottom: 7rem;
 }
