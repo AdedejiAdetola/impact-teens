@@ -44,27 +44,27 @@
     }
 
     &--music {
-      background: url("/images/musicPic.jpg");
+      background: url("../images/musicPic.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 80% center;
     }
     &--evangelism {
       background: linear-gradient(rgba(0, 0, 0, 0.4)),
-        url("/images/evangelismPic.jpg");
+        url("../images/evangelismPic.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
     }
     &--protocol {
-      background: url("/images/protocolPic.jpg");
+      background: url("../images/protocolPic.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center bottom;
     }
     &--media {
       background: linear-gradient(rgba(0, 0, 0, 0.6)),
-        url("/images/mediaPic.jpg");
+        url("../images/mediaPic.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 40% center;
