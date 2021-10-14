@@ -24,27 +24,124 @@
         justify-content: center;
         align-items: center;
         width:100%;
-        height:65vh;
-        border: 2px solid red;
+        height:70vh;
 
         &--1{
-            border:2px solid red;
-            width:30%;
+            width:40%;
             height:80%;
             margin-right: 2rem;
             background: url(../images/MagazinePublicationPic.jpg);
+            background-size: cover;
+            background-position: center 100%;
+            background-repeat: no-repeat;
         }
         
         &--2{
-            border:2px solid blue;
             width:15%;
             height:80%;
             margin-right: 2rem;
+            background: url(../images/evangelismPic.jpg);
+            background-size: cover;
+            background-position: 2000%;
         }
         &--3{
-            border:2px solid green;
             width: 15%;
             height:80%;
+            background-color: $white;
+            .topic{
+                padding-left: 1.5rem;
+                font-size: 1.4rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            .store{
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content: center;
+                height:75%;
+                &--img{
+                    width:90%;
+                    height:50%;
+                    background-color: $lightGrey;
+                    margin-bottom: 0.1rem;
+
+                    &--designed{
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        img{
+                            border-radius: 50%;
+                            width: 7rem;
+                            height: 7rem;
+                            margin-top: 1rem;
+                        }
+
+                        p {
+                            text-transform: uppercase;
+                            font-family: $normal-text, $designed-default;
+                            text-align: center;
+                            font-weight: 500;
+                        }
+
+                        &--p1 {
+                            font-size: 2rem;
+                        }
+                      
+                        &--p2 {
+                            font-size: 0.7rem;
+                            color:$blue;
+                            letter-spacing: 0.2rem;
+                        }
+                        
+                    }
+                }
+
+                &--content{
+                    width:90%;
+                    height:30%;
+                    background-color: $lightGrey;
+                    margin-bottom: 0.1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+
+                    i{
+                        color:$darkYellow;
+                    }
+
+                    p{
+                        text-transform: uppercase;
+                        font-family: $normal-text, $designed-default;
+                        padding-bottom: 0.1rem;
+                        margin-left: 1rem;
+                    }
+
+                    &--top{
+                        font-weight: 500;
+                    }
+                    &--middle{
+                        font-weight: lighter;
+                        font-size: 1.1rem;
+
+                    }
+                    &--bottom{
+                        font-weight: 900;
+                        color: $blue;
+                    }
+                }
+
+                &--checkout{
+                    width:90%;
+                    height:20%;
+                    background-color: $lightGrey;
+                }
+            }
+
         }
     }
     margin-bottom: 30rem;
