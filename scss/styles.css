@@ -58,6 +58,7 @@ body {
 
 .header__hr {
   width: 12rem;
+  border: none;
 }
 
 .header--modified {
@@ -727,7 +728,6 @@ body {
 .resources {
   background-color: #22577a;
   padding-top: 5rem;
-  margin-bottom: 30rem;
 }
 
 .resourcesInner {
@@ -789,6 +789,7 @@ body {
           align-items: center;
   width: 100%;
   height: 70vh;
+  margin-bottom: 20rem;
 }
 
 .resources__magazine--1 {
@@ -1001,6 +1002,195 @@ body {
 
 .magazine--detail span {
   color: #22577a;
+}
+
+.sermonEvents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sermonEvents__event {
+  width: 40%;
+}
+
+.sermonEvents__event--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.sermonEvents__event img {
+  width: 7rem;
+  height: 7rem;
+}
+
+.sermonEvents__event--small {
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", serif;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  font-size: 0.8rem;
+  color: #9e9d89;
+  padding-bottom: 1rem;
+}
+
+.sermonEvents__event--big {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.sermonEvents__event hr {
+  border: none;
+  border-top: 2px solid #232323;
+}
+
+.sermonEvents__event--bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sermonEvents__event--topic, .sermonEvents__event--head {
+  color: #fff;
+}
+
+.sermonEvents__event--head {
+  padding: 2rem 0;
+}
+
+.sermonEvents__event--topic {
+  background-color: #232323;
+  padding: 1rem;
+}
+
+.sermonEvents__event--topic span {
+  font-size: 0.8rem;
+}
+
+.sermonEvents__event--media {
+  margin: 2rem 0;
+}
+
+.sermonEvents__event--media span {
+  font-size: 2rem;
+  color: #9e9d89;
+}
+
+.sermonEvents__event--media span i {
+  background-color: #232323;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+.sermonEvents__event--bottom--2 img {
+  width: 20rem;
+  height: 20rem;
+}
+
+.sermonEvents__event .share {
+  color: #9e9d89;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.sermonEvents__randomEvent {
+  width: 40%;
+}
+
+.sermonEvents__randomEvent--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.sermonEvents__randomEvent .fa-calendar-minus {
+  font-size: 6rem;
+  color: #232323;
+}
+
+.sermonEvents__randomEvent--small {
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", serif;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  font-size: 0.8rem;
+  color: #9e9d89;
+  padding-bottom: 1rem;
+}
+
+.sermonEvents__randomEvent--big {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.sermonEvents__randomEvent hr {
+  border: none;
+  border-top: 2px solid #232323;
+  margin: 2rem 0;
+}
+
+.sermonEvents__randomEvent--contained {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #374045;
+  padding-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sermonEvents__randomEvent--contained .content {
+  color: #9e9d89;
+}
+
+.sermonEvents__randomEvent--date {
+  color: #fff;
+  background-color: #232323;
+  padding: 1rem;
+}
+
+.sermonEvents__randomEvent--date .day {
+  font-weight: 800;
+}
+
+.sermonEvents__randomEvent--date .month {
+  font-size: 0.8rem;
+}
+
+.sermonEvents__randomEvent--share {
+  color: #9e9d89;
+}
+
+.sermonEvents__randomEvent--share i {
+  color: #fff;
 }
 
 .btn {
