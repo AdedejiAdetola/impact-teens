@@ -934,6 +934,26 @@ body {
   width: 90%;
   height: 20%;
   background-color: #EEEEEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resources__magazine--3 .store--checkout div {
+  padding: 1rem;
+}
+
+.resources__magazine--3 .store--checkout div button {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  cursor: pointer;
 }
 
 .btn {
