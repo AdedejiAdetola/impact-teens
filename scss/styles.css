@@ -799,6 +799,7 @@ body {
   background-size: cover;
   background-position: center 100%;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .resources__magazine--2 {
@@ -808,6 +809,7 @@ body {
   background: url(../images/evangelismPic.jpg);
   background-size: cover;
   background-position: 2000%;
+  position: relative;
 }
 
 .resources__magazine--3 {
@@ -954,6 +956,51 @@ body {
   font-size: 1.1rem;
   padding: 0 1rem;
   cursor: pointer;
+}
+
+.magazine--calendar {
+  background-color: #fff;
+  width: 5vw;
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  border-radius: 0.2rem;
+}
+
+.magazine--calendar--day {
+  padding: 1rem 0;
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.magazine--calendar--date {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background-color: #22577a;
+  padding: 0.5rem 0;
+  color: #fff;
+  border-radius: 0.2rem;
+}
+
+.magazine--detail {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: #fff;
+}
+
+.magazine--detail--1 {
+  font-size: 1.6rem;
+}
+
+.magazine--detail--2 {
+  padding-top: 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.magazine--detail span {
+  color: #22577a;
 }
 
 .btn {
