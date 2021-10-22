@@ -8,7 +8,7 @@
         align-items: center;
         text-align: center;
         display: flex;
-        @include headingSpacedText($darkGrey, $black, $black);
+        @include headingSpacedText($lightBlack, $black, $black);
     }
 
     &Grid{
