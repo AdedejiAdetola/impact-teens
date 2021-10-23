@@ -1418,6 +1418,68 @@ body {
   color: #fff;
 }
 
+.testimony {
+  background-image: url("../images/testimonyPage.png");
+  padding: 5rem 0;
+  height: 80vh;
+  background-repeat: no-repeat;
+}
+
+.testimonyTop {
+  color: #fff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.testimonyTop--spacedText {
+  text-transform: uppercase;
+  font-family: "Noto Sans JP", serif;
+  font-weight: 500;
+  letter-spacing: 0.5rem;
+  font-size: 0.8rem;
+  color: #374045;
+  margin-bottom: 1rem;
+}
+
+.testimonyTop--Heading {
+  font-size: 2rem;
+  color: #232323;
+}
+
+.testimonyTop hr {
+  width: 12%;
+  border-top: 1px solid #232323;
+  margin: 2rem 0;
+}
+
+.testimonyContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40vh;
+}
+
+.testimonyContents .paragraph {
+  text-align: center;
+  height: auto;
+  border: 2px solid;
+}
+
 .btn {
   position: absolute;
   top: 65%;

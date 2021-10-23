@@ -1,0 +1,26 @@
+.testimony{
+    background-image: url("../images/testimonyPage.png");
+    padding: 5rem 0;
+    height:80vh;
+    background-repeat: no-repeat;
+    &Top{
+        color: $white;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: flex;
+        @include headingSpacedText($lightBlack, $black, $black);
+    }
+
+    &Contents{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        .paragraph{
+            text-align: center;
+            height: auto;
+            border: 2px solid;
+        }
+    }
+}
