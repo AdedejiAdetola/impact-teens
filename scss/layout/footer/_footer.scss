@@ -1,0 +1,27 @@
+.footer{
+    padding:7rem 0;
+    background-color: $black;
+    color:$darkGrey;
+    &__logoContent{
+    }
+    &--logoRegion{
+        display: flex;
+        img{
+            width:7rem;
+            margin-right: 1rem;
+        }
+    }
+
+    &--paragraph{
+        margin: 1rem 0;
+    }
+
+    &--icon {
+        color: $darkGrey;
+        background-color: transparent;
+        text-decoration: none;
+        &:hover {
+          font-size: 1.7rem;
+        }
+    }
+}

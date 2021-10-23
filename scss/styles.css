@@ -1480,6 +1480,37 @@ body {
   border: 2px solid;
 }
 
+.footer {
+  padding: 7rem 0;
+  background-color: #232323;
+  color: #9e9d89;
+}
+
+.footer--logoRegion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer--logoRegion img {
+  width: 7rem;
+  margin-right: 1rem;
+}
+
+.footer--paragraph {
+  margin: 1rem 0;
+}
+
+.footer--icon {
+  color: #9e9d89;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.footer--icon:hover {
+  font-size: 1.7rem;
+}
+
 .btn {
   position: absolute;
   top: 65%;
