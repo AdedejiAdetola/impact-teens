@@ -1484,6 +1484,19 @@ body {
   padding: 7rem 0;
   background-color: #232323;
   color: #9e9d89;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__logoContent {
+  width: 30%;
 }
 
 .footer--logoRegion {
@@ -1509,6 +1522,48 @@ body {
 
 .footer--icon:hover {
   font-size: 1.7rem;
+}
+
+.footer__post {
+  display: inline-block;
+}
+
+.footer__post--head {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer__post--all {
+  margin-bottom: 0.5rem;
+}
+
+.footer__tags {
+  width: 20%;
+}
+
+.footer__tags--head {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.footer__tags--buttonType {
+  text-transform: uppercase;
+  color: #9e9d89;
+  font-size: 0.8em;
+  border: 1px solid #9e9d89;
+  display: inline-block;
+  background-color: #232323;
+  margin: 0.3rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.footer__tags--buttonType:hover {
+  background-color: #22577a;
+  color: #fff;
+  cursor: pointer;
 }
 
 .btn {

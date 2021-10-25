@@ -2,8 +2,14 @@
     padding:7rem 0;
     background-color: $black;
     color:$darkGrey;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
     &__logoContent{
+        width:30%;
     }
+
     &--logoRegion{
         display: flex;
         img{
@@ -24,4 +30,48 @@
           font-size: 1.7rem;
         }
     }
+
+    &__post{
+        display:inline-block;
+        &--head{
+            font-size:2rem;
+            color:$white;
+            margin-bottom: 1rem;
+        }
+
+        &--all{
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__tags{
+        width:20%;
+        &--head{
+            font-size:2rem;
+            color:$white;
+            margin-bottom: 1rem;
+        }
+
+        &--buttonType{
+            text-transform: uppercase;
+            color:$darkGrey;
+            font-size: 0.8em;
+            border: 1px solid $darkGrey;
+            display: inline-block;
+            background-color: $black;
+            margin: 0.3rem;
+            padding:0.5rem;
+            text-decoration: none;
+
+            &:hover{
+                background-color: $blue;
+                color: $white;
+                cursor: pointer;
+            }
+
+           
+        }
+    }
+
+
 }
