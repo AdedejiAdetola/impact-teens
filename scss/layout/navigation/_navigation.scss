@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid blue;
   &__div {
     padding: 4rem 2rem;
     a {
@@ -27,7 +28,8 @@
     text-transform: uppercase;
     font-weight: 900;
     padding: 0 5rem;
-    //text-align:center; width:x%;
+    text-align:center; 
+    //width:x%;
     text-shadow: 0 0 0.5rem #fff;
     span {
       text-shadow: 0 0 0.5rem #fff;
@@ -42,8 +44,8 @@
   }
   &__iconn {
     img {
-      width: 10rem;
-      height: 10rem;
+      max-width: 10rem;
+      height: auto;
     }
   }
 }

@@ -25,9 +25,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  border: 2px solid red;
 }
 
 .header__text {
+  border: 2px solid yellow;
   position: absolute;
   top: 50%;
   left: 40%;
@@ -73,6 +75,7 @@ body {
   font-size: 3rem;
   letter-spacing: 0.3rem;
   padding-bottom: 1.5rem;
+  line-height: 4rem;
 }
 
 .header--modified_small {
@@ -89,6 +92,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border: 2px solid blue;
 }
 
 .nav__div {
@@ -120,6 +124,7 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   padding: 0 5rem;
+  text-align: center;
   text-shadow: 0 0 0.5rem #fff;
 }
 
@@ -137,8 +142,8 @@ body {
 }
 
 .nav__iconn img {
-  width: 10rem;
-  height: 10rem;
+  max-width: 10rem;
+  height: auto;
 }
 
 .section {
@@ -293,6 +298,7 @@ body {
   background-position: center top;
   background-size: cover;
   line-height: 2rem;
+  padding-bottom: 2rem;
 }
 
 .cultureHeading {
@@ -459,6 +465,7 @@ body {
   color: #9e9d89;
   background-color: #fff;
   border: none;
+  border-radius: 20px;
   outline: none;
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
@@ -596,6 +603,7 @@ body {
   color: #fff;
   background-color: #22577a;
   border: none;
+  border-radius: 20px;
   outline: none;
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
@@ -707,6 +715,7 @@ body {
   color: #9e9d89;
   background-color: #fff;
   border: none;
+  border-radius: 20px;
   outline: none;
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
@@ -1400,6 +1409,7 @@ body {
   color: #9e9d89;
   background-color: #fff;
   border: none;
+  border-radius: 20px;
   outline: none;
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
@@ -1506,7 +1516,8 @@ body {
 }
 
 .footer--logoRegion img {
-  width: 7rem;
+  max-width: 10rem;
+  height: auto;
   margin-right: 1rem;
 }
 
@@ -1591,6 +1602,7 @@ body {
   color: #fff;
   background-color: #22577a;
   border: none;
+  border-radius: 20px;
   outline: none;
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
