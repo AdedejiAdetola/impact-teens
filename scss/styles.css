@@ -146,6 +146,100 @@ body {
   height: auto;
 }
 
+.menu__btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 0px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  display: none;
+}
+
+.menu__btn--burger {
+  width: 50px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.menu__btn--burger::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.menu__btn--burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.menu__btn.open .menu__btn--burger {
+  -webkit-transform: scaleX(-20px);
+          transform: scaleX(-20px);
+  background: transparent;
+}
+
+.menu__btn.open .menu__btn--burger::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu__btn.open .menu__btn--burger::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 830px) {
+  .menu__btn {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .nav__iconn {
+    display: none;
+  }
+  .nav--head--logo {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .nav__div {
+    display: none;
+  }
+  .nav--head {
+    display: block;
+  }
+}
+
 .section {
   padding-top: 3rem;
   padding-bottom: 5rem;

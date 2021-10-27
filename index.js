@@ -1,3 +1,5 @@
+//countdown timer
+
 const days = document.querySelector('.days');
 const hours = document.querySelector('.hours');
 const minutes = document.querySelector('.minutes');
@@ -60,6 +62,21 @@ function setTimeLeft() {
   timeLeft.s = Math.floor(totalSeconds % 60);
 }
 
-
-
 init();
+
+
+
+
+//toggle
+const menuBtn = document.querySelector(".menu__btn");
+let menuClosed = true;
+
+menuBtn.addEventListener("click", () => {
+  if(menuClosed) {
+    menuBtn.classList.add("open");
+    menuClosed = false;
+  } else {
+    menuBtn.classList.remove("open");
+    menuClosed = true;
+  }
+})
