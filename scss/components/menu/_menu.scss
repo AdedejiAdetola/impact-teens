@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width:80px;
-  height:0px;
+  width:50px;
+  height:5vh;
   cursor: pointer;
   transition: all .5s ease-in-out;
   display: none;
@@ -25,7 +25,7 @@
     background-color:$white;
     border-radius: 5px;
     transition: all .5s ease-in-out;
-    transform: translateY(-20px)
+    transform: translateY(-20px);
   }
 
   &::after {
@@ -40,6 +40,45 @@
   }
 }
 
+
+.responsive{
+  border: 2px solid black;  
+  a{
+    text-decoration: none;
+    color: $white;
+    cursor:pointer;
+    &:hover{
+      font-size: 1.6rem;
+    }
+  }
+
+  div{
+    padding: 2rem 0;
+    text-align: center;
+    background-color: $blue;
+    border-bottom: 2px solid black;
+    //z-index: -1;
+  }
+  
+  display: none;
+  
+}
+
+.responsiveBlock{
+  display:block;
+  animation: reappear 0.5s linear reverse;
+}
+
+
+
+
+
+
+
+
+
+
+
 //ANIMATION
 @import "../../animations/menuAnimate/menuAnimate";
 
@@ -47,4 +86,5 @@
   .menu__btn{
     display: block;
   }
+
 }

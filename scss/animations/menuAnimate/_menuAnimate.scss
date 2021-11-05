@@ -1,3 +1,5 @@
+//nav section menu__btn
+
 .menu__btn.open .menu__btn--burger{
     transform: scaleX(-20px);
     background: transparent; 
@@ -10,3 +12,31 @@
 .menu__btn.open .menu__btn--burger::after{
     transform: rotate(-45deg) ;
 }
+
+//menuDropdown
+@keyframes reappear {
+    0%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  
+    25%{
+      transform:translateX(25%);
+      opacity:0.8;
+    }
+  
+    50%{
+      transform:translateX(50%);
+      opacity:0.5;
+    }
+  
+    75%{
+      transform:translateX(75%);
+      opacity: 0.25;
+    }
+  
+    100%{
+      transform:translateX(150%);
+      opacity:0;
+    }
+  }

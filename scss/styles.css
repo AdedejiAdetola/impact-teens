@@ -157,8 +157,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80px;
-  height: 0px;
+  width: 50px;
+  height: 5vh;
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
@@ -200,6 +200,33 @@ body {
           transform: translateY(20px);
 }
 
+.responsive {
+  border: 2px solid black;
+  display: none;
+}
+
+.responsive a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.responsive a:hover {
+  font-size: 1.6rem;
+}
+
+.responsive div {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #22577a;
+  border-bottom: 2px solid black;
+}
+
+.responsiveBlock {
+  display: block;
+  animation: reappear 0.5s linear reverse;
+}
+
 .menu__btn.open .menu__btn--burger {
   -webkit-transform: scaleX(-20px);
           transform: scaleX(-20px);
@@ -214,6 +241,62 @@ body {
 .menu__btn.open .menu__btn--burger::after {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+@-webkit-keyframes reappear {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(75%);
+            transform: translateX(75%);
+    opacity: 0.25;
+  }
+  100% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    opacity: 0;
+  }
+}
+
+@keyframes reappear {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(75%);
+            transform: translateX(75%);
+    opacity: 0.25;
+  }
+  100% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    opacity: 0;
+  }
 }
 
 @media only screen and (max-width: 830px) {
