@@ -5,11 +5,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  position: relative;
-  border:2px solid red;
+  
+  &__container{
+    height:80vh;
+    position: relative;
+  }
 
   &__text {
-    border:2px solid yellow;
     position: absolute;
     top: 50%;
     left: 40%;
@@ -51,3 +53,18 @@
   }
 }
 
+//RESPONSIVE
+
+
+
+@media only screen and (max-height: 650px) {
+  .header--modified_big{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header--modified_big{
+    font-size: 1rem;
+  }
+}

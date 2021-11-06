@@ -79,3 +79,34 @@
   @include button($darkGrey, $white, $blue, $white);
   padding-bottom: 7rem;
 }
+
+
+@media only screen and (max-width:1200px){
+  .connectGroupTeams{
+    justify-content: space-evenly;
+    &All{
+      width:20%;
+    }
+  }
+}
+
+@media only screen and (max-width:984px){
+  .connectGroupTeams--evangelism{
+    display:none;
+  }
+
+  .connectGroupTeamsAll{
+    width:30%;
+  }
+}
+
+
+@media only screen and (max-width:481px){
+  .connectGroupTeams--protocol{
+    display:none;
+  }
+
+  .connectGroupTeamsAll{
+    width:40%;
+  }
+}

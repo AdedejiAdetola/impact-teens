@@ -24,12 +24,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.header__container {
+  height: 80vh;
   position: relative;
-  border: 2px solid red;
 }
 
 .header__text {
-  border: 2px solid yellow;
   position: absolute;
   top: 50%;
   left: 40%;
@@ -82,6 +84,18 @@ body {
   font-size: 1.2rem;
 }
 
+@media only screen and (max-height: 650px) {
+  .header--modified_big {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .header--modified_big {
+    font-size: 1rem;
+  }
+}
+
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,7 +106,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid blue;
 }
 
 .nav__div {
@@ -469,6 +482,30 @@ body {
           justify-content: center;
 }
 
+@media only screen and (max-width: 865px) {
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .socials {
+    display: none;
+  }
+  .count {
+    font-size: 0.7rem;
+  }
+  .count__clock--modified {
+    font-size: 2rem;
+  }
+}
+
 .culturePage {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 81, 120, 0.85))), url("../images/culturePage.png");
   background: linear-gradient(rgba(3, 81, 120, 0.85)), url("../images/culturePage.png");
@@ -659,6 +696,26 @@ body {
   -webkit-box-shadow: inset 20rem 0 0 0 #22577a;
           box-shadow: inset 20rem 0 0 0 #22577a;
   color: #fff;
+}
+
+@media only screen and (max-width: 840px) {
+  .cultureSubheading__right {
+    display: none;
+  }
+  .cultureSubheading__left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .cultureSubheading__left__component {
+    width: 60%;
+  }
+  .cultureSubheading__left .aye {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .scripturePage {
@@ -911,6 +968,35 @@ body {
   color: #fff;
 }
 
+@media only screen and (max-width: 1200px) {
+  .connectGroupTeams {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .connectGroupTeamsAll {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 984px) {
+  .connectGroupTeams--evangelism {
+    display: none;
+  }
+  .connectGroupTeamsAll {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .connectGroupTeams--protocol {
+    display: none;
+  }
+  .connectGroupTeamsAll {
+    width: 40%;
+  }
+}
+
 .resources {
   background-color: #22577a;
   padding-top: 5rem;
@@ -979,20 +1065,22 @@ body {
 }
 
 .resources__magazine--1 {
-  width: 40%;
-  height: 80%;
-  margin-right: 2rem;
+  width: 507.5px;
+  height: 425.6px;
+  margin: 2rem;
   background: url(../images/MagazinePublicationPic.jpg);
   background-size: cover;
   background-position: center 100%;
   background-repeat: no-repeat;
   position: relative;
+  cursor: pointer;
 }
 
 .resources__magazine--2 {
-  width: 15%;
-  height: 80%;
-  margin-right: 2rem;
+  width: 190.3px;
+  height: 425.6px;
+  cursor: pointer;
+  margin: 2rem;
   background: url(../images/evangelismPic.jpg);
   background-size: cover;
   background-position: 2000%;
@@ -1000,9 +1088,10 @@ body {
 }
 
 .resources__magazine--3 {
-  width: 15%;
-  height: 80%;
+  width: 190.3px;
+  height: 425.6px;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .resources__magazine--3 .topic {
@@ -1147,7 +1236,7 @@ body {
 
 .magazine--calendar {
   background-color: #fff;
-  width: 5vw;
+  width: 64.3px;
   text-align: center;
   margin-top: 2rem;
   margin-left: 2rem;
@@ -1188,6 +1277,18 @@ body {
 
 .magazine--detail span {
   color: #22577a;
+}
+
+@media only screen and (max-width: 980px) {
+  .resources__magazine--3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .resources__magazine--2 {
+    display: none;
+  }
 }
 
 .sermonEvents {
@@ -1377,6 +1478,37 @@ body {
 
 .sermonEvents__randomEvent--share i {
   color: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+  .sermonEvents {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .sermonEvents__event {
+    width: 70%;
+    margin-bottom: 10rem;
+  }
+  .sermonEvents__randomEvent {
+    width: 70%;
+    margin-bottom: 10rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sermonEvents__event--bottom--2 {
+    display: none;
+  }
+  .sermonEvents__event--bottom {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .gallery {

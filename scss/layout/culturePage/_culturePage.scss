@@ -63,3 +63,24 @@
   margin-top: 2rem;
   @include button($darkGrey, $white, $blue, $white);
 }
+
+
+//RESPONSIVE
+
+@media only screen and (max-width: 840px){
+  .cultureSubheading__right{
+    display:none;
+  }
+
+  .cultureSubheading__left{
+    align-items: center;
+    width:100%;
+    &__component{
+      width:60%;
+    }
+
+    .aye{
+      align-items: center;
+    }
+  }
+}

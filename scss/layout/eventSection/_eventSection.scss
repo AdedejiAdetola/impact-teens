@@ -104,3 +104,22 @@
     }
   }
 }
+
+
+@media only screen and (max-width:865px) {
+  .section{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .socials{
+    display:none;
+  }
+
+  .count{
+    font-size: 0.7rem;
+    &__clock--modified{
+      font-size: 2rem;
+    }
+  }
+}
