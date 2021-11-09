@@ -11,10 +11,13 @@
         @include headingSpacedText($lightBlack, $black, $black);
     }
 
+    
+
     &Grid{
         display: grid;
+        width:100%;
         padding:0 30rem;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 150px);
         grid-auto-rows: minmax(150px, auto);
         grid-gap: 2rem;
         div{
@@ -30,5 +33,33 @@
             grid-column: 3/5;
             grid-row: 3/5;
         }
+    }
+
+    
+}
+
+//responsive
+@media only screen and (max-width:1045px){
+    .galleryGrid{
+        padding:0;
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width:675px){
+    .galleryGrid{
+        grid-template-columns: repeat(3, 150px);
+    }
+    .galleryGrid--1{
+        display:none;
+    }
+    .galleryGrid--6{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:511px){
+    .galleryGrid{
+        grid-template-columns: repeat(2, 150px);
     }
 }

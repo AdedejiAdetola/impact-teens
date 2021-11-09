@@ -76,3 +76,15 @@
 
 
 }
+
+@media only screen and (max-width:873px) {
+    .footer__tags{
+        display:none;
+    }
+    .footer--icon{
+        display: none;
+    }
+    .footer__top--p{
+        display: none;
+    }
+}

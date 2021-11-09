@@ -1555,9 +1555,10 @@ body {
 .galleryGrid {
   display: -ms-grid;
   display: grid;
+  width: 100%;
   padding: 0 30rem;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: (150px)[4];
+      grid-template-columns: repeat(4, 150px);
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 2rem;
 }
@@ -1582,6 +1583,33 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   grid-row: 3/5;
+}
+
+@media only screen and (max-width: 1045px) {
+  .galleryGrid {
+    padding: 0;
+    margin-left: 2rem;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .galleryGrid {
+    -ms-grid-columns: (150px)[3];
+        grid-template-columns: repeat(3, 150px);
+  }
+  .galleryGrid--1 {
+    display: none;
+  }
+  .galleryGrid--6 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 511px) {
+  .galleryGrid {
+    -ms-grid-columns: (150px)[2];
+        grid-template-columns: repeat(2, 150px);
+  }
 }
 
 .leaders {
@@ -1737,11 +1765,32 @@ body {
   color: #fff;
 }
 
+@media only screen and (max-width: 960px) {
+  .leadersTeamAll {
+    width: 30%;
+    height: 70%;
+  }
+  .lead--4 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 619px) {
+  .leadersTeamAll {
+    width: 40%;
+    height: 55%;
+  }
+  .lead--2 {
+    display: none;
+  }
+}
+
 .testimony {
   background-image: url("../images/testimonyPage.png");
   padding: 5rem 0;
   height: 80vh;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 .testimonyTop {
@@ -1796,7 +1845,6 @@ body {
 .testimonyContents .paragraph {
   text-align: center;
   height: auto;
-  border: 2px solid;
 }
 
 .footer {
@@ -1884,6 +1932,18 @@ body {
   background-color: #22577a;
   color: #fff;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 873px) {
+  .footer__tags {
+    display: none;
+  }
+  .footer--icon {
+    display: none;
+  }
+  .footer__top--p {
+    display: none;
+  }
 }
 
 .btn {

@@ -3,6 +3,7 @@
     padding: 5rem 0;
     height:80vh;
     background-repeat: no-repeat;
+    width:100%;
     &Top{
         color: $white;
         flex-direction: column;
@@ -20,7 +21,6 @@
         .paragraph{
             text-align: center;
             height: auto;
-            border: 2px solid;
         }
     }
 }
