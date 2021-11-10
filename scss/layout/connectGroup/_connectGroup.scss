@@ -19,6 +19,7 @@
     justify-content: center;
     width: 100%;
     @include button($white, $blue, $white, $blue);
+    margin-bottom: 2rem;
   }
 
   &Teams {
@@ -33,6 +34,7 @@
       margin-right: 1rem;
       display: flex;
       flex-direction: column;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       p {
@@ -68,6 +70,34 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: 40% center;
+    }
+    &--sanitation {
+      background: linear-gradient(rgba(0, 0, 0, 0.4)),
+        url("../images/sanitation.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    &--tech {
+      background: linear-gradient(rgba(0, 0, 0, 0.4)),
+        url("../images/tech.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    &--academics {
+      background: linear-gradient(rgba(0, 0, 0, 0.4)),
+        url("../images/academic.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    &--aesthetics {
+      background: linear-gradient(rgba(0, 0, 0, 0.4)),
+        url("../images/aesthetic.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left center;
     }
   }
 }

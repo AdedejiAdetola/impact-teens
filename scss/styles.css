@@ -482,6 +482,12 @@ body {
           justify-content: center;
 }
 
+.section__countdown .count__notClock a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 865px) {
   .section {
     -webkit-box-orient: vertical;
@@ -690,6 +696,9 @@ body {
   transition: ease-in-out 0.2s;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .cultureBtn__button:hover {
@@ -828,6 +837,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2rem;
 }
 
 .connectGroup--btn__button {
@@ -848,6 +858,9 @@ body {
   transition: ease-in-out 0.2s;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .connectGroup--btn__button:hover {
@@ -880,6 +893,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -925,6 +940,38 @@ body {
   background-position: 40% center;
 }
 
+.connectGroupTeams--sanitation {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("../images/sanitation.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/sanitation.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.connectGroupTeams--tech {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("../images/tech.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/tech.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.connectGroupTeams--academics {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("../images/academic.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/academic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.connectGroupTeams--aesthetics {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("../images/aesthetic.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url("../images/aesthetic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 .connectBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -960,6 +1007,9 @@ body {
   transition: ease-in-out 0.2s;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .connectBtn__button:hover {
@@ -1756,6 +1806,9 @@ body {
   transition: ease-in-out 0.2s;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .leaderBtn__button:hover {
@@ -1980,6 +2033,9 @@ body {
   transition: ease-in-out 0.2s;
   font-weight: 600;
   cursor: pointer;
+  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .btn__button:hover {
