@@ -60,9 +60,6 @@
   transition: ease-in-out 0.2s;
   font-weight: 600;
   cursor: pointer;
-  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .ats--btn__button:hover {
