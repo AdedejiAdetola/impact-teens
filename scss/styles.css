@@ -1704,22 +1704,23 @@ body {
 }
 
 .leadersTeam {
-  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
 }
 
 .leadersTeamAll {
-  width: 20%;
-  height: 80%;
-  margin-right: 1rem;
+  width: 300px;
+  height: 400px;
+  border: 2px solid;
+  text-align: center;
+  margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1733,13 +1734,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid white;
+  box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.75);
 }
 
 .leadersTeam--pic {
-  width: 100%;
-  height: 80%;
-  border: 2px solid red;
+  width: 270px;
+  height: 375px;
+  background-color: blueviolet;
 }
 
 .leadersTeam--text {
@@ -1753,7 +1756,7 @@ body {
   letter-spacing: 0.5rem;
   font-size: 0.8rem;
   color: #9e9d89;
-  padding-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 .leadersTeam--name {
@@ -1803,26 +1806,6 @@ body {
   -webkit-box-shadow: inset 20rem 0 0 0 #22577a;
           box-shadow: inset 20rem 0 0 0 #22577a;
   color: #fff;
-}
-
-@media only screen and (max-width: 960px) {
-  .leadersTeamAll {
-    width: 30%;
-    height: 70%;
-  }
-  .lead--4 {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 619px) {
-  .leadersTeamAll {
-    width: 40%;
-    height: 55%;
-  }
-  .lead--2 {
-    display: none;
-  }
 }
 
 .testimony {
