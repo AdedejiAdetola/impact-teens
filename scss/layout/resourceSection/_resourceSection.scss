@@ -41,17 +41,17 @@
         }
         
         &--2{
-            width:190.3px;
+            width:200px;
             height:425.6px;
             cursor: pointer;
             margin: 2rem;
             background: url(../images/evangelismPic.jpg);
             background-size: cover;
-            background-position: 2000%;
+            background-position: center;
             position: relative;
         }
         &--3{
-            width: 190.3px;
+            width: 200px;
             height:425.6px;
             background-color: $white;
             cursor: pointer;
@@ -287,6 +287,10 @@
                     background-color:$black;
                     padding:2rem;
                     border-radius: 50%;
+                    color:$lightGrey;
+                    &:hover{
+                        background-color: $darkGrey;
+                    }
                 }
             }
         }

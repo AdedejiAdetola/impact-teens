@@ -1118,18 +1118,18 @@ body {
 }
 
 .resources__magazine--2 {
-  width: 190.3px;
+  width: 200px;
   height: 425.6px;
   cursor: pointer;
   margin: 2rem;
   background: url(../images/evangelismPic.jpg);
   background-size: cover;
-  background-position: 2000%;
+  background-position: center;
   position: relative;
 }
 
 .resources__magazine--3 {
-  width: 190.3px;
+  width: 200px;
   height: 425.6px;
   background-color: #fff;
   cursor: pointer;
@@ -1424,6 +1424,11 @@ body {
   background-color: #232323;
   padding: 2rem;
   border-radius: 50%;
+  color: #EEEEEE;
+}
+
+.sermonEvents__event--media span i:hover {
+  background-color: #9e9d89;
 }
 
 .sermonEvents__event--bottom--2 img {

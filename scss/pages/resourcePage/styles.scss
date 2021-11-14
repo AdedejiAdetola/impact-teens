@@ -1,0 +1,102 @@
+.resources__magazine{
+    margin-bottom: 0;
+}
+
+.resourceSermons{
+    background-color: lightgray;
+    padding: 2rem 0;
+    &__head{
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    &__container{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__box{
+        width: 500px;
+        height: 290px;
+        background-image: linear-gradient(to right, lightgrey, darkgrey, black);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:2rem;
+        box-shadow: 5px 0px 5px 3px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 5px 0px 5px 3px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 0px 5px 3px rgba(0,0,0,0.75);
+    }
+    &__pic{
+        img{
+            width: 150px;
+        }
+    }
+    &__content{
+        background-color: white;
+        //width: 60%;
+        padding: 2rem;
+        p{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        span{
+            font-size: 0.8rem;
+        }
+        hr{
+            margin: 1rem 0;
+        }
+    }
+    &--media{
+        span{
+            font-size: 2rem;
+            i{
+                padding:2rem;
+                margin:1rem;
+                border-radius: 50%;
+                background-color: grey;
+                color:white;
+                &:hover{
+                    background-color: lightgray;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:500px) {
+    .resourceSermons{
+        &__box{
+            flex-direction: column;
+            height:auto;
+            justify-content: center;
+            align-items:space-around;
+            padding: 2rem 0;
+        }
+
+        &--media{
+            span{
+                font-size: 2rem;
+                i{
+                    padding:1rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        &__content{
+            background-color: white;
+            padding: 1rem;
+            p{
+                font-size: 1.2rem;
+            }
+            span{
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

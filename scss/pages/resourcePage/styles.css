@@ -1,0 +1,118 @@
+.resources__magazine {
+  margin-bottom: 0;
+}
+
+.resourceSermons {
+  background-color: lightgray;
+  padding: 2rem 0;
+}
+
+.resourceSermons__head {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.resourceSermons__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.resourceSermons__box {
+  width: 500px;
+  height: 290px;
+  background-image: -webkit-gradient(linear, left top, right top, from(lightgrey), color-stop(darkgrey), to(black));
+  background-image: linear-gradient(to right, lightgrey, darkgrey, black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+  box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.75);
+}
+
+.resourceSermons__pic img {
+  width: 150px;
+}
+
+.resourceSermons__content {
+  background-color: white;
+  padding: 2rem;
+}
+
+.resourceSermons__content p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.resourceSermons__content span {
+  font-size: 0.8rem;
+}
+
+.resourceSermons__content hr {
+  margin: 1rem 0;
+}
+
+.resourceSermons--media span {
+  font-size: 2rem;
+}
+
+.resourceSermons--media span i {
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 50%;
+  background-color: grey;
+  color: white;
+}
+
+.resourceSermons--media span i:hover {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 500px) {
+  .resourceSermons__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: space-around;
+        -ms-flex-align: space-around;
+            align-items: space-around;
+    padding: 2rem 0;
+  }
+  .resourceSermons--media span {
+    font-size: 2rem;
+  }
+  .resourceSermons--media span i {
+    padding: 1rem;
+    font-size: 2rem;
+  }
+  .resourceSermons__content {
+    background-color: white;
+    padding: 1rem;
+  }
+  .resourceSermons__content p {
+    font-size: 1.2rem;
+  }
+  .resourceSermons__content span {
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
