@@ -1,6 +1,6 @@
 .nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   &__div {
     padding: 4rem 2rem;
@@ -26,9 +26,7 @@
     color: $white;
     text-transform: uppercase;
     font-weight: 900;
-    padding: 0 5rem;
     text-align:center; 
-    //width:x%;
     text-shadow: 0 0 0.5rem #fff;
     span {
       text-shadow: 0 0 0.5rem #fff;
@@ -61,6 +59,9 @@
 
   .nav--head--logo{
     display: block;
+    img{
+      max-width: 7rem;
+    }
   }
 }
 
@@ -70,7 +71,10 @@
     display:none;
   }
 
+  //.nav{justify-content: space-evenly;}
+
   .nav--head{
     display:block;
+    font-size: 1.2rem;
   }
 }

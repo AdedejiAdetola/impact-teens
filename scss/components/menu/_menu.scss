@@ -1,18 +1,20 @@
 .menu__btn{
   position: relative;
+  top: -.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:50px;
-  height:5vh;
+  width:40px;
+  height:4vh;
   cursor: pointer;
   transition: all .5s ease-in-out;
   display: none;
+  padding: 2rem 0;
 }
 
 .menu__btn--burger{
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 4px;
   background-color:$white;
   border-radius: 5px;
   transition: all .5s ease-in-out;
@@ -20,23 +22,23 @@
   &::before {
     content:"";
     position: absolute;
-    width: 50px;
-    height: 6px;
+    width: 40px;
+    height: 4px;
     background-color:$white;
     border-radius: 5px;
     transition: all .5s ease-in-out;
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
 
   &::after {
     content:"";
     position: absolute;
-    width: 50px;
-    height: 6px;
+    width: 40px;
+    height: 4px;
     background-color:$white;
     border-radius: 5px;
     transition: all .5s ease-in-out;
-    transform: translateY(20px)
+    transform: translateY(15px)
   }
 }
 

@@ -19,8 +19,8 @@
     border-radius: 50%;
     margin: 2rem 0;
   }
-  @include headingSpacedText($darkGrey, $white, $black);
-  @include sectionSetupText($darkGrey);
+  @include headingSpacedText($white, $white, $black);
+  @include sectionSetupText($white);
   margin-bottom: 8rem;
 }
 

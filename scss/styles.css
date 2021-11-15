@@ -35,8 +35,8 @@ body {
   position: absolute;
   top: 50%;
   left: 40%;
-  -webkit-transform: translate(-40%, -80%);
-          transform: translate(-40%, -80%);
+  -webkit-transform: translate(-37%, -80%);
+          transform: translate(-37%, -80%);
   text-align: center;
   color: #fff;
   width: 80%;
@@ -100,9 +100,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -136,7 +135,6 @@ body {
   color: #fff;
   text-transform: uppercase;
   font-weight: 900;
-  padding: 0 5rem;
   text-align: center;
   text-shadow: 0 0 0.5rem #fff;
 }
@@ -161,6 +159,7 @@ body {
 
 .menu__btn {
   position: relative;
+  top: -.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,17 +169,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50px;
-  height: 5vh;
+  width: 40px;
+  height: 4vh;
   cursor: pointer;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   display: none;
+  padding: 2rem 0;
 }
 
 .menu__btn--burger {
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 4px;
   background-color: #fff;
   border-radius: 5px;
   -webkit-transition: all .5s ease-in-out;
@@ -190,27 +190,27 @@ body {
 .menu__btn--burger::before {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 4px;
   background-color: #fff;
   border-radius: 5px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
 }
 
 .menu__btn--burger::after {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 6px;
+  width: 40px;
+  height: 4px;
   background-color: #fff;
   border-radius: 5px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
+  -webkit-transform: translateY(15px);
+          transform: translateY(15px);
 }
 
 .responsive {
@@ -325,6 +325,9 @@ body {
   .nav--head--logo {
     display: block;
   }
+  .nav--head--logo img {
+    max-width: 7rem;
+  }
 }
 
 @media only screen and (max-width: 830px) {
@@ -333,6 +336,7 @@ body {
   }
   .nav--head {
     display: block;
+    font-size: 1.2rem;
   }
 }
 
@@ -549,7 +553,7 @@ body {
   font-weight: 500;
   letter-spacing: 0.5rem;
   font-size: 0.8rem;
-  color: #9e9d89;
+  color: #fff;
   margin-bottom: 1rem;
 }
 
@@ -566,7 +570,7 @@ body {
 
 .cultureHeading--text {
   width: 70%;
-  color: #9e9d89;
+  color: #fff;
   font-size: 1.2rem;
 }
 
@@ -632,7 +636,7 @@ body {
 
 .cultureSubheading__right__component div p:last-child {
   font-size: 1rem;
-  color: #9e9d89;
+  color: #fff;
 }
 
 .aye {
@@ -658,7 +662,7 @@ body {
 
 .aye p:last-child {
   font-size: 1rem;
-  color: #9e9d89;
+  color: #fff;
 }
 
 .cultureBtn {
@@ -750,7 +754,7 @@ body {
 }
 
 .scripturePage__text p:first-child {
-  color: #fff;
+  color: #232323;
 }
 
 .scripturePage__text p:first-child span {
@@ -1303,7 +1307,7 @@ body {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
-  color: #fff;
+  color: blue;
 }
 
 .magazine--detail--1 {
@@ -1317,7 +1321,7 @@ body {
 }
 
 .magazine--detail span {
-  color: #22577a;
+  color: black;
 }
 
 @media only screen and (max-width: 980px) {
@@ -1961,6 +1965,12 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1070px) {
+  .footer--logoRegion img {
+    max-width: 7rem;
+  }
+}
+
 @media only screen and (max-width: 873px) {
   .footer__tags {
     display: none;
@@ -1977,8 +1987,9 @@ body {
   position: absolute;
   top: 65%;
   left: 50%;
-  -webkit-transform: translate(-70%, 150%);
-          transform: translate(-70%, 150%);
+  -webkit-transform: translate(-50%, 150%);
+          transform: translate(-50%, 150%);
+  margin-top: 6rem;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -2,6 +2,7 @@
   position: absolute;
   top: 65%;
   left: 50%;
-  transform: translate(-70%, 150%);
+  transform: translate(-50%, 150%);
+  margin-top: 6rem;
   @include button($white, $blue, $white, $blue);
 }
