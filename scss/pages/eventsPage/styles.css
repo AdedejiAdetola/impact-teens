@@ -28,9 +28,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 7rem;
-  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
 }
 
 .ats--text--head {
@@ -40,6 +40,8 @@
 
 .ats--text--body {
   margin-bottom: 10rem;
+  line-height: 3rem;
+  text-align: justify;
 }
 
 .ats--btn__button {
@@ -73,9 +75,9 @@
   padding: 4rem;
   background-color: #EEEEEE;
   margin-left: 2rem;
-  box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
 }
 
 .photos__container p {

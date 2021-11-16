@@ -55,10 +55,11 @@
 .flex--0 {
   width: 300px;
   text-align: center;
-  margin: 1rem;
-  box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 5px 0px 5px 3px rgba(0, 0, 0, 0.75);
+  padding-bottom: 2rem;
+  margin: 2rem;
+  box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
 }
 
 .flex--0 img {
@@ -77,6 +78,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0 1rem;
+  line-height: 3rem;
 }
 
 .leadersTeam--name {
