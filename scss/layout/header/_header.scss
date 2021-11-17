@@ -1,10 +1,21 @@
 .header {
   height: 100vh;
   line-height: 2rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.7)), url("../images/Homepage.jpg");
+  width:100%;
+  background-image:  url("../images/Homepage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  transition: 5s ease-in-out;
+  animation-name: backgroundAnimated;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+
+  
   
   &__container{
     height:80vh;
@@ -54,7 +65,7 @@
 }
 
 //RESPONSIVE
-
+@import "../../animations/menuAnimate/menuAnimate";
 
 
 @media only screen and (max-height: 650px) {

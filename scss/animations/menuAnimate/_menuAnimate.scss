@@ -40,3 +40,21 @@
       opacity:0;
     }
   }
+
+  //animated background
+  @keyframes backgroundAnimated {
+    0%{
+      background:  url("../images/bgIMG1.jpg");
+    }
+
+    50%{
+      background-image:  url("../images/bgIMG0.jpg");
+    }
+
+    100%{
+      background-image:  url("../images/Homepage.jpg");
+    }
+    
+  }
+
+  

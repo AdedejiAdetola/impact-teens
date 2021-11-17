@@ -19,11 +19,26 @@ body {
 .header {
   height: 100vh;
   line-height: 2rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7))), url("../images/Homepage.jpg");
-  background: linear-gradient(rgba(0, 0, 0, 0.7)), url("../images/Homepage.jpg");
+  width: 100%;
+  background-image: url("../images/Homepage.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-transition: 5s ease-in-out;
+  transition: 5s ease-in-out;
+  -webkit-animation-name: backgroundAnimated;
+          animation-name: backgroundAnimated;
+  animation-direction: alternate-reverse;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 .header__container {
@@ -82,6 +97,102 @@ body {
 
 .header--modified_small {
   font-size: 1.2rem;
+}
+
+.menu__btn.open .menu__btn--burger {
+  -webkit-transform: scaleX(-20px);
+          transform: scaleX(-20px);
+  background: transparent;
+}
+
+.menu__btn.open .menu__btn--burger::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu__btn.open .menu__btn--burger::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+@-webkit-keyframes reappear {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(75%);
+            transform: translateX(75%);
+    opacity: 0.25;
+  }
+  100% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    opacity: 0;
+  }
+}
+
+@keyframes reappear {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  25% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+    opacity: 0.8;
+  }
+  50% {
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    opacity: 0.5;
+  }
+  75% {
+    -webkit-transform: translateX(75%);
+            transform: translateX(75%);
+    opacity: 0.25;
+  }
+  100% {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes backgroundAnimated {
+  0% {
+    background: url("../images/bgIMG1.jpg");
+  }
+  50% {
+    background-image: url("../images/bgIMG0.jpg");
+  }
+  100% {
+    background-image: url("../images/Homepage.jpg");
+  }
+}
+
+@keyframes backgroundAnimated {
+  0% {
+    background: url("../images/bgIMG1.jpg");
+  }
+  50% {
+    background-image: url("../images/bgIMG0.jpg");
+  }
+  100% {
+    background-image: url("../images/Homepage.jpg");
+  }
 }
 
 @media only screen and (max-height: 650px) {
@@ -256,7 +367,7 @@ body {
           transform: rotate(-45deg);
 }
 
-@-webkit-keyframes reappear {
+@keyframes reappear {
   0% {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -284,31 +395,15 @@ body {
   }
 }
 
-@keyframes reappear {
+@keyframes backgroundAnimated {
   0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    opacity: 1;
-  }
-  25% {
-    -webkit-transform: translateX(25%);
-            transform: translateX(25%);
-    opacity: 0.8;
+    background: url("../images/bgIMG1.jpg");
   }
   50% {
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-    opacity: 0.5;
-  }
-  75% {
-    -webkit-transform: translateX(75%);
-            transform: translateX(75%);
-    opacity: 0.25;
+    background-image: url("../images/bgIMG0.jpg");
   }
   100% {
-    -webkit-transform: translateX(150%);
-            transform: translateX(150%);
-    opacity: 0;
+    background-image: url("../images/Homepage.jpg");
   }
 }
 
@@ -1624,15 +1719,69 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+  background-image: url("../images/teensJump.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-.galleryGrid .galleryGrid--6 {
+.galleryGrid .galleryGrid--10 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3/5;
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   grid-row: 3/5;
+  background-image: url("../images/pstSunday.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.galleryGrid .galleryGrid--2 {
+  background-image: url("../images/pstSunday.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.galleryGrid .galleryGrid--3 {
+  background-image: url("../images/joba.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.galleryGrid .galleryGrid--4 {
+  background-image: url("../images/joba.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.galleryGrid .galleryGrid--5 {
+  background-image: url("../images/joba.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.galleryGrid .galleryGrid--6 {
+  background-image: url("../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.galleryGrid .galleryGrid--7 {
+  background-image: url("../images/joba.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.galleryGrid .galleryGrid--8 {
+  background-image: url("../images/teensSit.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.galleryGrid .galleryGrid--9 {
+  background-image: url("../images/regteam.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 1045px) {
@@ -1649,7 +1798,7 @@ body {
   .galleryGrid--1 {
     display: none;
   }
-  .galleryGrid--6 {
+  .galleryGrid--10 {
     display: none;
   }
 }
@@ -1871,11 +2020,16 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 40vh;
+  border: 2px solid green;
+  position: relative;
 }
 
 .testimonyContents .paragraph {
+  position: absolute;
   text-align: center;
   height: auto;
+  width: 70%;
+  border: 2px solid blue;
 }
 
 .footer {

@@ -103,6 +103,60 @@
   margin: 1rem;
 }
 
+.photos .photos--1 {
+  background-image: url("../../../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.photos .photos--2 {
+  background-image: url("../../../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.photos .photos--3 {
+  background-image: url("../../../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.photos .photos--4 {
+  background-image: url("../../../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.photos .photos--5 {
+  background-image: url("../../../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.photos .photos--6 {
+  background-image: url("../../../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.photos .photos--7 {
+  background-image: url("../../../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.photos .photos--8 {
+  background-image: url("../../../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.photos .photos--9 {
+  background-image: url("../../../images/bobo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 @media only screen and (max-width: 1200px) {
   .photos__container {
     display: none;
