@@ -11,15 +11,25 @@
         @include headingSpacedText($lightBlack, $black, $black);
     }
 
+    &Flex{
+        position: relative;
+        height:100vh;
+        border: 2px solid blue;
+        
+        
+    }
     
-
     &Grid{
+        position: absolute;
         display: grid;
-        width:100%;
-        padding:0 30rem;
+        width:660px;
         grid-template-columns: repeat(4, 150px);
         grid-auto-rows: minmax(150px, auto);
         grid-gap: 2rem;
+        border:2px solid red;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
         div{
             //width:100px;
             //height:100px;
@@ -87,15 +97,11 @@
 }
 
 //responsive
-@media only screen and (max-width:1045px){
-    .galleryGrid{
-        padding:2rem;
-    }
-}
 
 @media only screen and (max-width:675px){
     .galleryGrid{
         grid-template-columns: repeat(3, 150px);
+        width:490px;
     }
     .galleryGrid--1{
         display:none;
@@ -108,5 +114,6 @@
 @media only screen and (max-width:511px){
     .galleryGrid{
         grid-template-columns: repeat(2, 150px);
+        width:320px;
     }
 }
