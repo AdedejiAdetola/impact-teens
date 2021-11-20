@@ -25,7 +25,8 @@
         align-items: center;
         width:100%;
         height:70vh;
-        margin-bottom: 20rem;
+        margin-bottom: 3rem;
+        //border: 2px solid red;
         //flex-wrap: wrap;
 
         &--1{
@@ -234,11 +235,12 @@
     justify-content: space-around;
     &__event{
         width:40%;
+        //border:2px solid red;
+        //margin-bottom: 0;
         &--top{
             display:flex;
             align-items: center;
             justify-content: space-between;
-            padding-bottom: 1rem;
         }
         img{
             width:7rem;
@@ -311,6 +313,7 @@
 
     &__randomEvent{
         width:40%;
+        //border: 2px solid red;
         
         &--top{
             display:flex;
@@ -366,6 +369,16 @@
         }
     }
 }
+
+
+
+.resourceBtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    @include button($darkGrey, $white, $blue, $white);
+    //padding-bottom: 7rem;
+  }
 
 @media only screen and (max-width:1000px) {
     .sermonEvents{
