@@ -1741,7 +1741,6 @@ body {
 .galleryFlex {
   position: relative;
   height: 100vh;
-  border: 2px solid blue;
 }
 
 .galleryGrid {
@@ -1753,7 +1752,6 @@ body {
       grid-template-columns: repeat(4, 150px);
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 2rem;
-  border: 2px solid red;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
