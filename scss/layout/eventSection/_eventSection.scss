@@ -8,11 +8,10 @@
   &__event {
     display: flex;
     &__logo {
-      margin-right: 3rem;
+      margin-right: 2rem;
       img {
         width: 7rem;
-        height: 7rem;
-        border-radius: 50%;
+        margin-top: 1rem;
       }
       p {
         text-transform: uppercase;

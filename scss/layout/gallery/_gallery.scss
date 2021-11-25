@@ -1,6 +1,6 @@
 .gallery{
     padding: 5rem 0;
-    background-color: $lightGrey;
+    background-color: red;
     
     &Top{
         color: $white;
@@ -41,7 +41,7 @@
         .galleryGrid--10{
             grid-column: 3/5;
             grid-row: 3/5;
-            background-image: url("../images/pstSunday.jpg");
+            background-image: url("../images/atsPlentyPeople.jpeg");
             background-position: center;
             background-size: cover;
         }
@@ -51,19 +51,19 @@
             background-size: cover;
         }
         .galleryGrid--3{
-            background-image: url("../images/joba.jpg");
+            background-image: url("../images/art.jpeg");
             background-position: center;
             background-size: cover;
         }
         .galleryGrid--4{
-            background-image: url("../images/joba.jpg");
+            background-image: url("../images/pstdew.jpeg");
             background-position: center;
             background-size: cover;
         }
         .galleryGrid--5{
-            background-image: url("../images/joba.jpg");
+            background-image: url("../images/teachers.jpeg");
             background-position: center;
-            background-size: cover;
+            background-size: contain;
         }
         .galleryGrid--6{
             background-image: url("../images/bobo.jpg");
@@ -113,3 +113,4 @@
         width:320px;
     }
 }
+

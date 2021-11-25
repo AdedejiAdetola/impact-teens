@@ -455,13 +455,12 @@ body {
 }
 
 .section__event__logo {
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 .section__event__logo img {
   width: 7rem;
-  height: 7rem;
-  border-radius: 50%;
+  margin-top: 1rem;
 }
 
 .section__event__logo p {
@@ -1207,229 +1206,21 @@ body {
 
 .resources__magazine--1 {
   width: 507.5px;
-  height: 425.6px;
-  margin: 2rem;
-  background: url(../images/MagazinePublicationPic.jpg);
-  background-size: cover;
-  background-position: center 100%;
-  background-repeat: no-repeat;
-  position: relative;
-  cursor: pointer;
-}
-
-.resources__magazine--2 {
-  width: 200px;
-  height: 425.6px;
-  cursor: pointer;
-  margin: 2rem;
-  background: url(../images/evangelismPic.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-.resources__magazine--3 {
-  width: 200px;
-  height: 425.6px;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-.resources__magazine--3 .topic {
-  padding-left: 1.5rem;
-  font-size: 1.4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.resources__magazine--3 .store {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 75%;
-}
-
-.resources__magazine--3 .store--img {
-  width: 90%;
-  height: 50%;
-  background-color: #EEEEEE;
-  margin-bottom: 0.1rem;
-}
-
-.resources__magazine--3 .store--img--designed {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.resources__magazine--3 .store--img--designed img {
-  border-radius: 50%;
-  width: 7rem;
-  height: 7rem;
-  margin-top: 1rem;
-}
-
-.resources__magazine--3 .store--img--designed p {
-  text-transform: uppercase;
-  font-family: "Noto Sans JP", serif;
-  text-align: center;
-  font-weight: 500;
-}
-
-.resources__magazine--3 .store--img--designed--p1 {
-  font-size: 2rem;
-}
-
-.resources__magazine--3 .store--img--designed--p2 {
-  font-size: 0.7rem;
-  color: #22577a;
-  letter-spacing: 0.2rem;
-}
-
-.resources__magazine--3 .store--content {
-  width: 90%;
-  height: 30%;
-  background-color: #EEEEEE;
-  margin-bottom: 0.1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.resources__magazine--3 .store--content i {
-  color: #FFB344;
-}
-
-.resources__magazine--3 .store--content p {
-  text-transform: uppercase;
-  font-family: "Noto Sans JP", serif;
-  padding-bottom: 0.1rem;
-  margin-left: 1rem;
-}
-
-.resources__magazine--3 .store--content--top {
-  font-weight: 500;
-}
-
-.resources__magazine--3 .store--content--middle {
-  font-weight: lighter;
-  font-size: 1.1rem;
-}
-
-.resources__magazine--3 .store--content--bottom {
-  font-weight: 900;
-  color: #22577a;
-}
-
-.resources__magazine--3 .store--checkout {
-  width: 90%;
-  height: 20%;
-  background-color: #EEEEEE;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.resources__magazine--3 .store--checkout div {
-  padding: 1rem;
-}
-
-.resources__magazine--3 .store--checkout div button {
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  padding: 0 1rem;
+.resources__magazine--1 img {
+  width: 300px;
   cursor: pointer;
-}
-
-.magazine--calendar {
-  background-color: #fff;
-  width: 64.3px;
-  text-align: center;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  border-radius: 0.2rem;
-}
-
-.magazine--calendar--day {
-  padding: 1rem 0;
-  font-weight: 900;
-  font-size: 2rem;
-}
-
-.magazine--calendar--date {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  background-color: #22577a;
-  padding: 0.5rem 0;
-  color: #fff;
-  border-radius: 0.2rem;
-}
-
-.magazine--detail {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  color: blue;
-}
-
-.magazine--detail--1 {
-  font-size: 1.6rem;
-}
-
-.magazine--detail--2 {
-  padding-top: 0.5rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-}
-
-.magazine--detail span {
-  color: black;
-}
-
-@media only screen and (max-width: 980px) {
-  .resources__magazine--3 {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 800px) {
-  .resources__magazine--2 {
-    display: none;
-  }
+  box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 5px 1px rgba(0, 0, 0, 0.75);
 }
 
 .sermonEvents {
@@ -1441,7 +1232,7 @@ body {
 }
 
 .sermonEvents__event {
-  width: 65%;
+  width: 50%;
   margin-bottom: 5rem;
 }
 
@@ -1613,7 +1404,7 @@ body {
 
 .gallery {
   padding: 5rem 0;
-  background-color: #EEEEEE;
+  background-color: red;
 }
 
 .galleryTop {
@@ -1695,7 +1486,7 @@ body {
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
   grid-row: 3/5;
-  background-image: url("../images/pstSunday.jpg");
+  background-image: url("../images/atsPlentyPeople.jpeg");
   background-position: center;
   background-size: cover;
 }
@@ -1707,21 +1498,21 @@ body {
 }
 
 .galleryGrid .galleryGrid--3 {
-  background-image: url("../images/joba.jpg");
+  background-image: url("../images/art.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .galleryGrid .galleryGrid--4 {
-  background-image: url("../images/joba.jpg");
+  background-image: url("../images/pstdew.jpeg");
   background-position: center;
   background-size: cover;
 }
 
 .galleryGrid .galleryGrid--5 {
-  background-image: url("../images/joba.jpg");
+  background-image: url("../images/teachers.jpeg");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .galleryGrid .galleryGrid--6 {
