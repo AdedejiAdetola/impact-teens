@@ -17,7 +17,7 @@ body {
 }
 
 .header {
-  height: 100vh;
+  height: 791px;
   line-height: 2rem;
   width: 100%;
   background-image: url("../images/Homepage.jpg");
@@ -42,7 +42,7 @@ body {
 }
 
 .header__container {
-  height: 80vh;
+  height: 628.95px;
   position: relative;
 }
 
@@ -769,7 +769,7 @@ body {
           justify-content: center;
   width: 100%;
   margin-top: 2rem;
-  height: 10vh;
+  height: 79.112px;
   display: flex;
   justify-content: center;
   -webkit-box-align: center;
@@ -927,7 +927,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 10vh;
+  height: 79.112px;
   display: flex;
   justify-content: center;
   -webkit-box-align: center;
@@ -963,7 +963,7 @@ body {
 }
 
 .connectGroupTeams {
-  height: 60vh;
+  height: 474.712px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -977,7 +977,7 @@ body {
 
 .connectGroupTeamsAll {
   width: 15%;
-  height: 80%;
+  height: 379.763px;
   margin-right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1073,7 +1073,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 10vh;
+  height: 79.112px;
   display: flex;
   justify-content: center;
   -webkit-box-align: center;
@@ -1134,6 +1134,7 @@ body {
   }
   .connectGroupTeamsAll {
     width: 40%;
+    height: 300px;
   }
 }
 
@@ -1200,8 +1201,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 70vh;
-  margin-bottom: 3rem;
+  height: 550px;
+  margin-bottom: 2rem;
 }
 
 .resources__magazine--1 {
@@ -1440,7 +1441,8 @@ body {
 }
 
 .sermonEvents__event {
-  width: 40%;
+  width: 65%;
+  margin-bottom: 5rem;
 }
 
 .sermonEvents__event--top {
@@ -1458,6 +1460,7 @@ body {
 .sermonEvents__event img {
   width: 7rem;
   height: 7rem;
+  margin-right: 2rem;
 }
 
 .sermonEvents__event--small {
@@ -1540,90 +1543,6 @@ body {
   margin: 2rem 0;
 }
 
-.sermonEvents__randomEvent {
-  width: 40%;
-}
-
-.sermonEvents__randomEvent--top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-bottom: 1rem;
-}
-
-.sermonEvents__randomEvent .fa-calendar-minus {
-  font-size: 6rem;
-  color: #232323;
-}
-
-.sermonEvents__randomEvent--small {
-  text-transform: uppercase;
-  font-family: "Noto Sans JP", serif;
-  font-weight: 500;
-  letter-spacing: 0.5rem;
-  font-size: 0.8rem;
-  color: #9e9d89;
-  padding-bottom: 1rem;
-}
-
-.sermonEvents__randomEvent--big {
-  color: #fff;
-  font-size: 2rem;
-}
-
-.sermonEvents__randomEvent hr {
-  border: none;
-  border-top: 2px solid #232323;
-  margin: 2rem 0;
-}
-
-.sermonEvents__randomEvent--contained {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #374045;
-  padding-right: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.sermonEvents__randomEvent--contained .content {
-  color: #9e9d89;
-}
-
-.sermonEvents__randomEvent--date {
-  color: #fff;
-  background-color: #232323;
-  padding: 1rem;
-}
-
-.sermonEvents__randomEvent--date .day {
-  font-weight: 800;
-}
-
-.sermonEvents__randomEvent--date .month {
-  font-size: 0.8rem;
-}
-
-.sermonEvents__randomEvent--share {
-  color: #9e9d89;
-}
-
-.sermonEvents__randomEvent--share i {
-  color: #fff;
-}
-
 .resourceBtn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1632,7 +1551,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 10vh;
+  height: 79.112px;
   display: flex;
   justify-content: center;
   -webkit-box-align: center;
@@ -1678,11 +1597,6 @@ body {
   }
   .sermonEvents__event {
     width: 70%;
-    margin-bottom: 10rem;
-  }
-  .sermonEvents__randomEvent {
-    width: 70%;
-    margin-bottom: 10rem;
   }
 }
 
@@ -1740,7 +1654,7 @@ body {
 
 .galleryFlex {
   position: relative;
-  height: 100vh;
+  height: 791px;
 }
 
 .galleryGrid {
@@ -1976,7 +1890,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  height: 10vh;
+  height: 79.112px;
   display: flex;
   justify-content: center;
   -webkit-box-align: center;
@@ -2190,7 +2104,7 @@ body {
   -webkit-transform: translate(-50%, 150%);
           transform: translate(-50%, 150%);
   margin-top: 6rem;
-  height: 10vh;
+  height: 79.112px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

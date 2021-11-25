@@ -23,14 +23,14 @@
   }
 
   &Teams {
-    height: 60vh;
+    height: 474.712px;
     display: flex;
     justify-content: center;
     align-items: center;
 
     &All {
       width: 15%;
-      height: 80%;
+      height: 379.763px;
       margin-right: 1rem;
       display: flex;
       flex-direction: column;
@@ -135,8 +135,9 @@
   .connectGroupTeams--protocol{
     display:none;
   }
-
+  
   .connectGroupTeamsAll{
     width:40%;
+    height: 300px;
   }
 }
