@@ -2,6 +2,7 @@
     overflow:hidden;
     &Top{
         color: $white;
+        margin-top: 5rem;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -10,7 +11,7 @@
     }
 
     &Contents{
-        height: 1000px;
+        height: 600px;
         width:100%;
         overflow: hidden;
         position: relative;
@@ -18,7 +19,7 @@
             position: absolute;
             top:0;
             left:0;
-            height: 1000px;
+            height: 600px;
             width:100%;
             img{
                 width:120%;
@@ -30,25 +31,34 @@
 
             .text-box{
                 width: 300px;
+                //border:2px solid red;
                 position: absolute;
+                font-size: 2rem;
+                line-height: 3rem;
                 top:50%;
-                left:50px;
+                left:50%;
                 color:white;
-                transform: translateY(-50%);
+                transform: translate(-50%,-50%);
+                text-align: center;
+                background-color: rgba(34, 87, 122, 0.13);
+                border-radius: 2rem;
+                padding:2rem;
+                box-shadow: -1px 0px 5px 1px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -1px 0px 5px 1px rgba(0,0,0,0.75);
+                -moz-box-shadow: -1px 0px 5px 1px rgba(0,0,0,0.75);
                 &--detail{
-                    line-height: 18px;
-                    font-size: 1.3rem;
                     margin-bottom: 3.5rem;
                 }
                 &--person{
                     margin-top: 7rem;
                 }
                 span{
-                    background-color: red;
+                    background-color: $white;
                     width:100px;
                     height:1px;
                     position: absolute;
-                    left:0;
+                    left:50%;
+                    transform: translateX(-50%);
                 }
             }
             
@@ -56,13 +66,16 @@
         
 
         &--1{
-            animation: testimonyPic 12s linear infinite;
+            animation: testimonyPic 15s linear infinite;
+            animation-direction: reverse;
         }
         &--2{
-            animation: testimonyPic2 12s linear infinite;
+            animation: testimonyPic2 15s linear infinite;
+            animation-direction: reverse;
         }
         &--3{
-            animation: testimonyPic3 12s linear infinite;
+            animation: testimonyPic3 15s linear infinite;
+            animation-direction: reverse;
         }
         
     }
@@ -136,16 +149,17 @@
 }
 
 @media only screen and (max-width:690px){
-    .text-box{
-        left:0px;
-        width:300px;
-    }
-
     .testimony{
         &Contents{
-            height:400px;
+            width:100%;
+            height:500px;
             &--1,&--2,&--3{
-                height:400px;
+                height:500px;
+                .text-box{
+                    width:300px;
+                    font-size: 1.5rem;
+                    padding:1rem;
+                }
             }
         }
     }
