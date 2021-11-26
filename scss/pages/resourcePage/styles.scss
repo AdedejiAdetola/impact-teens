@@ -1,3 +1,8 @@
+.header{
+    background-image:  url("../../../images/resources.jpg");
+    animation-name: none;
+}
+
 .resources__magazine{
     margin-bottom: 0;
 }
@@ -22,7 +27,8 @@
         height: 290px;
         background-image: linear-gradient(to right, lightgrey, darkgrey, black);
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         margin:2rem;
         box-shadow: -1px 0px 5px 1px rgba(0,0,0,0.75);
@@ -69,6 +75,9 @@
 
 
 @media only screen and (max-width:500px) {
+    .header{
+        background-position: right;
+    }
     .resourceSermons{
         &__box{
             flex-direction: column;

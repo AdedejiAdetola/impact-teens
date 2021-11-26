@@ -1296,7 +1296,9 @@ body {
 
 .sermonEvents__event--topic {
   background-color: #232323;
+  opacity: 0.5;
   padding: 1rem;
+  width: 300px;
 }
 
 .sermonEvents__event--topic span {
@@ -1326,12 +1328,6 @@ body {
 .sermonEvents__event--bottom--2 img {
   width: 20rem;
   height: 20rem;
-}
-
-.sermonEvents__event .share {
-  color: #9e9d89;
-  font-size: 1.5rem;
-  margin: 2rem 0;
 }
 
 .resourceBtn {
@@ -1651,7 +1647,7 @@ body {
 .leadersTeam--pic {
   width: 270px;
   height: 700px;
-  background-color: #EEEEEE;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1733,10 +1729,7 @@ body {
 }
 
 .testimony {
-  background-image: url("../images/testimonyPage.png");
-  padding: 5rem 0;
-  height: 80vh;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .testimonyTop {
@@ -1776,26 +1769,200 @@ body {
 }
 
 .testimonyContents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 40vh;
-  border: 2px solid green;
+  height: 1000px;
+  width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
-.testimonyContents .paragraph {
+.testimonyContents--1, .testimonyContents--2, .testimonyContents--3 {
   position: absolute;
-  text-align: center;
-  height: auto;
-  width: 70%;
-  border: 2px solid blue;
+  top: 0;
+  left: 0;
+  height: 1000px;
+  width: 100%;
+}
+
+.testimonyContents--1 img, .testimonyContents--2 img, .testimonyContents--3 img {
+  width: 120%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.testimonyContents--1 .text-box, .testimonyContents--2 .text-box, .testimonyContents--3 .text-box {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  color: white;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.testimonyContents--1 .text-box--detail, .testimonyContents--2 .text-box--detail, .testimonyContents--3 .text-box--detail {
+  line-height: 18px;
+  font-size: 1.3rem;
+  margin-bottom: 3.5rem;
+}
+
+.testimonyContents--1 .text-box--person, .testimonyContents--2 .text-box--person, .testimonyContents--3 .text-box--person {
+  margin-top: 7rem;
+}
+
+.testimonyContents--1 .text-box span, .testimonyContents--2 .text-box span, .testimonyContents--3 .text-box span {
+  background-color: red;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  left: 0;
+}
+
+.testimonyContents--1 {
+  -webkit-animation: testimonyPic 12s linear infinite;
+          animation: testimonyPic 12s linear infinite;
+}
+
+.testimonyContents--2 {
+  -webkit-animation: testimonyPic2 12s linear infinite;
+          animation: testimonyPic2 12s linear infinite;
+}
+
+.testimonyContents--3 {
+  -webkit-animation: testimonyPic3 12s linear infinite;
+          animation: testimonyPic3 12s linear infinite;
+}
+
+@-webkit-keyframes testimonyPic {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes testimonyPic {
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes testimonyPic2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes testimonyPic2 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: visible;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes testimonyPic3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes testimonyPic3 {
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .testimonyContents {
+    height: 800px;
+  }
+  .testimonyContents--1, .testimonyContents--2, .testimonyContents--3 {
+    height: 800px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .text-box {
+    left: 0px;
+    width: 300px;
+  }
+  .testimonyContents {
+    height: 400px;
+  }
+  .testimonyContents--1, .testimonyContents--2, .testimonyContents--3 {
+    height: 400px;
+  }
 }
 
 .footer {

@@ -1,3 +1,9 @@
+.header {
+  background-image: url("../../../images/events.jpg");
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
 .ats__container {
   display: -webkit-box;
   display: -ms-flexbox;

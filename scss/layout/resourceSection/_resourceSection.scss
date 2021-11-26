@@ -103,7 +103,9 @@
         }
         &--topic{
             background-color:$black;
+            opacity:0.5;
             padding:1rem;
+            width:300px;
             span{
                 font-size: 0.8rem;
             }
@@ -130,12 +132,6 @@
                 width:20rem;
                 height:20rem;
             }
-        }
-
-        .share{
-            color:$darkGrey;
-            font-size: 1.5rem;
-            margin: 2rem 0;
         }
     }
 }

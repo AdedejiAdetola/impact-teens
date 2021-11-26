@@ -1,3 +1,9 @@
+.header {
+  background-image: url("../../../images/about1.jpg");
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
 .Heading {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,8 +1,5 @@
 .testimony{
-    background-image: url("../images/testimonyPage.png");
-    padding: 5rem 0;
-    height:80vh;
-    background-repeat: no-repeat;
+    overflow:hidden;
     &Top{
         color: $white;
         flex-direction: column;
@@ -13,19 +10,143 @@
     }
 
     &Contents{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40vh;
-        border: 2px solid green;
+        height: 1000px;
+        width:100%;
+        overflow: hidden;
         position: relative;
-        .paragraph{
+        &--1, &--2, &--3{
             position: absolute;
-            text-align: center;
-            height: auto;
-            width: 70%;
-            border: 2px solid blue;
+            top:0;
+            left:0;
+            height: 1000px;
+            width:100%;
+            img{
+                width:120%;
+                position: absolute;
+                left:50%;
+                top:50%;
+                transform: translate(-50%,-50%);
+            }
+
+            .text-box{
+                width: 300px;
+                position: absolute;
+                top:50%;
+                left:50px;
+                color:white;
+                transform: translateY(-50%);
+                &--detail{
+                    line-height: 18px;
+                    font-size: 1.3rem;
+                    margin-bottom: 3.5rem;
+                }
+                &--person{
+                    margin-top: 7rem;
+                }
+                span{
+                    background-color: red;
+                    width:100px;
+                    height:1px;
+                    position: absolute;
+                    left:0;
+                }
+            }
+            
+        }
+        
+
+        &--1{
+            animation: testimonyPic 12s linear infinite;
+        }
+        &--2{
+            animation: testimonyPic2 12s linear infinite;
+        }
+        &--3{
+            animation: testimonyPic3 12s linear infinite;
+        }
+        
+    }
+}
+
+@keyframes testimonyPic{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+@keyframes testimonyPic2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+
+@keyframes testimonyPic3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+
+
+
+@media only screen and (max-width:1024px){
+    .testimony{
+        &Contents{
+            height:800px;
+            &--1,&--2,&--3{
+                height:800px;
+            }
         }
     }
 }
 
+@media only screen and (max-width:690px){
+    .text-box{
+        left:0px;
+        width:300px;
+    }
+
+    .testimony{
+        &Contents{
+            height:400px;
+            &--1,&--2,&--3{
+                height:400px;
+            }
+        }
+    }
+}

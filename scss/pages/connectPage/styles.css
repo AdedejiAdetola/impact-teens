@@ -1,3 +1,9 @@
+.header {
+  background-image: url("../../../images/connect.jpg");
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
 .connectGroup {
   background-color: #fff;
 }
