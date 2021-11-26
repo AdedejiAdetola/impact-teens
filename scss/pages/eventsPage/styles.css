@@ -20,7 +20,11 @@
 .ats--image {
   background-color: black;
   width: 770px;
-  height: 600px;
+  height: auto;
+}
+
+.ats--image img {
+  width: 770px;
 }
 
 .ats--text {
@@ -172,6 +176,9 @@
     width: 500px;
     height: 500px;
   }
+  .ats--image img {
+    width: 500px;
+  }
   .ats--text {
     width: 500px;
   }
@@ -181,6 +188,9 @@
   .ats--image {
     width: 325px;
     height: 325px;
+  }
+  .ats--image img {
+    width: 325px;
   }
   .ats--text {
     width: 325px;

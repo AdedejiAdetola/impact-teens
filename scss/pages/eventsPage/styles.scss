@@ -12,7 +12,10 @@
     &--image{
         background-color: black;
         width:770px;
-        height:600px;
+        height:auto;
+        img{
+            width:770px;
+        }
     }
     &--text{
         width:770px;
@@ -146,7 +149,10 @@
     .ats{
         &--image{
             width:500px;
-            height:500px
+            height:500px;
+            img{
+                width:500px;
+            }
         }
         &--text{
             width:500px;
@@ -158,7 +164,10 @@
     .ats{
         &--image{
             width:325px;
-            height:325px
+            height:325px;
+            img{
+                width:325px;
+            }
         }
         &--text{
             width:325px;

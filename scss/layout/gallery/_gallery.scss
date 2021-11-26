@@ -1,6 +1,6 @@
 .gallery{
     padding: 5rem 0;
-    background-color: red;
+    background-color: $lightGrey;
     
     &Top{
         color: $white;
@@ -62,8 +62,9 @@
         }
         .galleryGrid--5{
             background-image: url("../images/teachers.jpeg");
-            background-position: center;
-            background-size: contain;
+            background-position: -48px center;
+            background-size: cover;
+            //background-repeat: no-repeat;
         }
         .galleryGrid--6{
             background-image: url("../images/bobo.jpg");

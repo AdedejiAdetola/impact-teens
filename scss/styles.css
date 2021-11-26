@@ -1404,7 +1404,7 @@ body {
 
 .gallery {
   padding: 5rem 0;
-  background-color: red;
+  background-color: #EEEEEE;
 }
 
 .galleryTop {
@@ -1511,8 +1511,8 @@ body {
 
 .galleryGrid .galleryGrid--5 {
   background-image: url("../images/teachers.jpeg");
-  background-position: center;
-  background-size: contain;
+  background-position: -48px center;
+  background-size: cover;
 }
 
 .galleryGrid .galleryGrid--6 {
@@ -1626,7 +1626,7 @@ body {
 
 .leadersTeamAll {
   width: 300px;
-  height: 400px;
+  height: 550px;
   padding-bottom: 2rem;
   text-align: center;
   margin: 2rem;
@@ -1650,8 +1650,23 @@ body {
 
 .leadersTeam--pic {
   width: 270px;
-  height: 375px;
-  background-color: blueviolet;
+  height: 700px;
+  background-color: #EEEEEE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.leadersTeam--pic img {
+  width: 270px;
+  height: auto;
 }
 
 .leadersTeam--text {
@@ -1890,7 +1905,7 @@ body {
 
 .btn {
   position: absolute;
-  top: 65%;
+  top: 400px;
   left: 50%;
   -webkit-transform: translate(-50%, 150%);
           transform: translate(-50%, 150%);
