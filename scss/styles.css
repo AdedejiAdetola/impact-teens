@@ -1589,18 +1589,18 @@ body {
 
 .leadersInner--Heading {
   font-size: 2rem;
-  color: #9e9d89;
+  color: #fff;
 }
 
 .leadersInner hr {
   width: 12%;
-  border-top: 1px solid #9e9d89;
+  border-top: 1px solid #fff;
   margin: 2rem 0;
 }
 
 .leadersInner--text {
   width: 70%;
-  color: #9e9d89;
+  color: #fff;
   font-size: 1.2rem;
 }
 

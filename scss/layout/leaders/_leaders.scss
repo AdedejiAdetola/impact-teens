@@ -8,8 +8,8 @@
         align-items: center;
         text-align: center;
 
-        @include headingSpacedText($blue, $darkGrey, $darkGrey);
-        @include sectionSetupText($darkGrey);
+        @include headingSpacedText($blue, $white, $white);
+        @include sectionSetupText($white);
         
         &--text{
             width:50%;
